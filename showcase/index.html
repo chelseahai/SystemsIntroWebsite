@@ -1,1 +1,2659 @@
-<!DOCTYPE html><html><head><meta charSet="utf-8"/><title>What are you doing for today?</title><meta name="description" content="Convert natural language descriptions into garment parameters"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 100 100&#x27;&gt;&lt;text y=&#x27;.9em&#x27; font-size=&#x27;90&#x27;&gt;🧵&lt;/text&gt;&lt;/svg&gt;"/><meta name="next-head-count" content="5"/><link rel="preload" href="/showcase/_next/static/css/1319497a264cc614.css" as="style"/><link rel="stylesheet" href="/showcase/_next/static/css/1319497a264cc614.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/showcase/_next/static/chunks/polyfills-42372ed130431b0a.js"></script><script src="/showcase/_next/static/chunks/webpack-9eca67a1c5d332ff.js" defer=""></script><script src="/showcase/_next/static/chunks/framework-64ad27b21261a9ce.js" defer=""></script><script src="/showcase/_next/static/chunks/main-17033d3a676c9159.js" defer=""></script><script src="/showcase/_next/static/chunks/pages/_app-87cee5540118d1b4.js" defer=""></script><script src="/showcase/_next/static/chunks/pages/index-1ae64e105c378dd7.js" defer=""></script><script src="/showcase/_next/static/Y2EV67niXfL1AVOT-xaXF/_buildManifest.js" defer=""></script><script src="/showcase/_next/static/Y2EV67niXfL1AVOT-xaXF/_ssgManifest.js" defer=""></script></head><body><div id="__next"><main style="height:100vh;width:100vw;overflow:hidden;font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:300;position:relative"><div style="position:absolute;top:0;left:0;right:0;bottom:0;display:flex;justify-content:center;align-items:center;background:transparent"><div style="color:#ccc;font-size:14px;font-weight:300">Enter a description to generate visualization</div></div><div style="position:absolute;left:0;top:0;width:600px;height:100%;display:flex;flex-direction:column;padding:40px;background:transparent;z-index:20"><h1 style="font-size:24px;font-weight:300;margin-bottom:40px;letter-spacing:0.5px">What are you doing for today?</h1><form style="flex:1;display:flex;flex-direction:column"><textarea placeholder="Describe your day or plan..." style="flex:1;width:100%;padding:16px;border:none;border-radius:4px;font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:300;font-size:14px;resize:none;background:transparent;outline:none"></textarea><p style="margin-top:12px;font-size:11px;color:#999;font-weight:300">Press Enter to analyze</p></form><div style="margin-top:40px;padding-top:40px"><div style="margin-bottom:16px"><div style="display:flex;align-items:center;margin-bottom:4px;font-size:11px;font-weight:300;letter-spacing:1px;text-transform:uppercase;color:#000"><span style="width:90px">FIT</span><div style="flex:1;position:relative;height:20px;display:flex;align-items:center;margin:0 20px;padding-left:80px;padding-right:90px"><span style="font-size:10px;color:#999;position:absolute;left:0;white-space:nowrap">Close</span><div style="position:absolute;left:80px;right:90px;height:1px;background:#e0e0e0"></div><div style="position:absolute;left:calc(80px + 0% * (100% - 170px) / 100%);width:1px;height:16px;background:#000;transform:translateX(-50%);transition:left 0.8s ease-out"></div><span style="font-size:10px;color:#999;position:absolute;right:0;white-space:nowrap">Loose</span></div><span style="width:50px;text-align:right;font-size:12px;font-weight:300;color:#000;margin-left:12px">0.00</span></div></div><div style="margin-bottom:16px"><div style="display:flex;align-items:center;margin-bottom:4px;font-size:11px;font-weight:300;letter-spacing:1px;text-transform:uppercase;color:#000"><span style="width:90px">MESH</span><div style="flex:1;position:relative;height:20px;display:flex;align-items:center;margin:0 20px;padding-left:80px;padding-right:90px"><span style="font-size:10px;color:#999;position:absolute;left:0;white-space:nowrap">Open</span><div style="position:absolute;left:80px;right:90px;height:1px;background:#e0e0e0"></div><div style="position:absolute;left:calc(80px + 0% * (100% - 170px) / 100%);width:1px;height:16px;background:#000;transform:translateX(-50%);transition:left 0.8s ease-out"></div><span style="font-size:10px;color:#999;position:absolute;right:0;white-space:nowrap">Fine</span></div><span style="width:50px;text-align:right;font-size:12px;font-weight:300;color:#000;margin-left:12px">0.00</span></div></div><div style="margin-bottom:16px"><div style="display:flex;align-items:center;margin-bottom:4px;font-size:11px;font-weight:300;letter-spacing:1px;text-transform:uppercase;color:#000"><span style="width:90px">THICKNESS</span><div style="flex:1;position:relative;height:20px;display:flex;align-items:center;margin:0 20px;padding-left:80px;padding-right:90px"><span style="font-size:10px;color:#999;position:absolute;left:0;white-space:nowrap">Thin</span><div style="position:absolute;left:80px;right:90px;height:1px;background:#e0e0e0"></div><div style="position:absolute;left:calc(80px + 0% * (100% - 170px) / 100%);width:1px;height:16px;background:#000;transform:translateX(-50%);transition:left 0.8s ease-out"></div><span style="font-size:10px;color:#999;position:absolute;right:0;white-space:nowrap">Thick</span></div><span style="width:50px;text-align:right;font-size:12px;font-weight:300;color:#000;margin-left:12px">0.00</span></div></div><div style="margin-bottom:16px"><div style="display:flex;align-items:center;margin-bottom:4px;font-size:11px;font-weight:300;letter-spacing:1px;text-transform:uppercase;color:#000"><span style="width:90px">AIRFLOW</span><div style="flex:1;position:relative;height:20px;display:flex;align-items:center;margin:0 20px;padding-left:80px;padding-right:90px"><span style="font-size:10px;color:#999;position:absolute;left:0;white-space:nowrap">Breathable</span><div style="position:absolute;left:80px;right:90px;height:1px;background:#e0e0e0"></div><div style="position:absolute;left:calc(80px + 0% * (100% - 170px) / 100%);width:1px;height:16px;background:#000;transform:translateX(-50%);transition:left 0.8s ease-out"></div><span style="font-size:10px;color:#999;position:absolute;right:0;white-space:nowrap">Unbreathable</span></div><span style="width:50px;text-align:right;font-size:12px;font-weight:300;color:#000;margin-left:12px">0.00</span></div></div><div style="margin-bottom:16px"><div style="display:flex;align-items:center;margin-bottom:4px;font-size:11px;font-weight:300;letter-spacing:1px;text-transform:uppercase;color:#000"><span style="width:90px">SUPPORT</span><div style="flex:1;position:relative;height:20px;display:flex;align-items:center;margin:0 20px;padding-left:80px;padding-right:90px"><span style="font-size:10px;color:#999;position:absolute;left:0;white-space:nowrap">Soft</span><div style="position:absolute;left:80px;right:90px;height:1px;background:#e0e0e0"></div><div style="position:absolute;left:calc(80px + 0% * (100% - 170px) / 100%);width:1px;height:16px;background:#000;transform:translateX(-50%);transition:left 0.8s ease-out"></div><span style="font-size:10px;color:#999;position:absolute;right:0;white-space:nowrap">Rigid</span></div><span style="width:50px;text-align:right;font-size:12px;font-weight:300;color:#000;margin-left:12px">0.00</span></div></div></div></div></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"Y2EV67niXfL1AVOT-xaXF","assetPrefix":"/showcase","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prototype2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <style>
+    * { box-sizing: border-box; }
+    :root {
+      --axis-font: 'Poppins', system-ui, sans-serif;
+    }
+    html {
+      font-size: 14px;
+    }
+    body {
+      margin: 0;
+      padding-left: 15px;
+      font-family: 'Poppins', system-ui, sans-serif;
+      font-weight: 200;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background: #fff;
+      color: #000;
+    }
+    h1, h2, h3, h4, h5, h6,
+    p, span, label,
+    button, input, textarea {
+      font-weight: 200;
+      font-family: inherit;
+      letter-spacing: 0.1em;
+      line-height: 1.5;
+    }
+    #ui {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      padding: 0.75rem 1rem;
+      color: #000;
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      z-index: 20;
+    }
+    #status {
+      width: 8px; height: 8px;
+      border-radius: 0;
+      border: 1px solid #000;
+      flex-shrink: 0;
+    }
+    #status.connected { background: #000; border-color: #000; }
+    #status.disconnected { background: transparent; }
+    #received { font-size: 14px; opacity: 0.9; }
+    #sim-debug { font-size: 11px; color: #666; margin-top: 4px; }
+    #sim-debug {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      z-index: 10;
+      font-size: 11px;
+      color: #666;
+      background: rgba(255,255,255,0.9);
+      padding: 4px 8px;
+      border-radius: 0;
+      pointer-events: none;
+    }
+    #fabricate-btn {
+      margin-left: auto;
+      padding: 0.35rem 0.75rem;
+      font-size: 14px;
+      color: #000;
+      background: transparent;
+      border: 1px solid rgba(0,0,0,0.6);
+      border-radius: 0;
+      cursor: pointer;
+    }
+    #fabricate-btn:hover { border-color: #000; background: rgba(0,0,0,0.08); }
+    #layout {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    #visual-panel {
+      width: 100%;
+      min-height: 360px;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+    #canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: #fff;
+    }
+    #metrics-panel {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      padding: 88px 24px 24px;
+      background: rgba(255,255,255,0.98);
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      text-align: center;
+      gap: 16px;
+      font-size: 14px;
+      overflow-y: auto;
+    }
+    #metrics-panel > * {
+      width: 100%;
+    }
+    .content-two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      width: 100%;
+      margin-top: 20px;
+      align-items: stretch;
+    }
+    .content-visuals {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+      align-items: center;
+      max-width: 100%;
+      justify-content: flex-start;
+      overflow: visible;
+    }
+    .content-visuals .visual-card {
+      transform: rotate(var(--tilt, 0deg));
+      width: 100%;
+      margin-bottom: -6px;
+    }
+    .content-visuals .visual-card:last-child { margin-bottom: 0; }
+    .content-visuals .visual-card:nth-child(1) { --tilt: -0.6deg; max-width: 360px; }
+    .content-visuals .visual-card:nth-child(2) { --tilt: 0.5deg; max-width: 550px; }
+    #map-card { display: none; }
+    .content-visuals .visual-card:nth-child(3) { --tilt: -0.4deg; max-width: 300px; }
+    .content-visuals .visual-card:nth-child(4) { --tilt: 0.5deg; max-width: 320px; }
+    .content-visuals .visual-card img.streetview-grid-img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 0;
+      filter: grayscale(1);
+      background: #eee;
+      display: block;
+    }
+    .content-text {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      line-height: 1.75;
+    }
+    .content-text .step1-annotated { text-align: center; }
+    .content-text .step1-legend { justify-content: center; }
+    .content-text .pipeline-step { margin-top: 0; max-width: 380px; }
+    @media (max-width: 768px) {
+      .content-two-col { grid-template-columns: 1fr; }
+    }
+    #map {
+      width: 100%;
+      height: 360px;
+      border-radius: 0;
+      border: none;
+      margin-bottom: 10px;
+      background: #e8e8e8;
+      overflow: hidden;
+      filter: grayscale(1) contrast(1.2) brightness(0.95);
+    }
+    .minimal-marker-icon { background: none; border: none; }
+    .minimal-marker-dot {
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 0;
+      background: #fff;
+      border: none;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
+    }
+    #map .minimal-marker-dot {
+      background: #ffffff;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.35);
+    }
+    .route-form label { display: block; font-size: 14px; margin-bottom: 2px; color: #333; }
+    .route-form input {
+      width: 100%;
+      padding: 6px 8px;
+      font-size: 14px;
+      border: 1px solid #ddd;
+      border-radius: 0;
+      margin-bottom: 8px;
+    }
+    .route-form input:focus { outline: none; border-color: #000; }
+    .waypoint-row { display: flex; gap: 6px; align-items: center; margin-bottom: 6px; }
+    .waypoint-row .address-wrap { flex: 1; position: relative; }
+    .waypoint-row input { flex: 1; margin-bottom: 0; }
+    .waypoint-row .remove-wp { padding: 4px 8px; font-size: 14px; cursor: pointer; border: 1px solid #ccc; background: #f5f5f5; border-radius: 0; }
+    .waypoint-row .remove-wp:hover { background: #eee; }
+    #add-dest-btn { padding: 4px 8px; font-size: 14px; margin-bottom: 8px; border: 1px solid #999; background: transparent; border-radius: 0; cursor: pointer; }
+    #add-dest-btn:hover { background: rgba(0,0,0,0.06); }
+    #calculate-route-btn { padding: 6px 12px; font-size: 14px; border-radius: 0; border: 1px solid #000; background: #000; color: #fff; cursor: pointer; }
+    #calculate-route-btn:hover { background: #333; }
+    #calculate-route-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    #route-status { font-size: 14px; color: #666; margin-top: 6px; min-height: 1.2em; }
+    .pipeline-step { margin-top: 20px; padding-top: 0; border-top: none; }
+    .pipeline-step-title { font-family: var(--axis-font); font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; margin: 0 0 8px 0; }
+    .step-empty { font-size: 14px; color: #888; margin: 6px 0 0 0; font-style: italic; }
+    .step1-legend { display: flex; flex-wrap: wrap; gap: 8px 12px; margin-bottom: 8px; font-size: 14px; color: #555; }
+    .legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 0; margin-right: 4px; vertical-align: middle; }
+    .step1-annotated {
+      font-family: 'Covered By Your Grace', cursive;
+      font-size: 12px;
+      line-height: 1.85;
+      padding: 0;
+      background: transparent;
+      border-radius: 0;
+      border: none;
+      text-align: left;
+      margin: 0;
+      text-indent: 0;
+    }
+    .step1-annotated .highlight-wrap { display: inline-block; vertical-align: top; }
+    .step1-annotated .highlight-wrap > span:first-child { display: inline-block; }
+    .step1-annotated .highlight-start { background: rgba(200, 242, 217, 0.5); padding: 0 2px; border-radius: 0; }
+    .step1-annotated .highlight-destination { background: rgba(228, 219, 255, 0.5); padding: 0 2px; border-radius: 0; }
+    .step1-annotated .highlight-transit { background: rgba(210, 240, 255, 0.5); padding: 0 2px; border-radius: 0; }
+    .step1-annotated .highlight-weather { background: rgba(214, 229, 255, 0.5); padding: 0 2px; border-radius: 0; }
+    .step1-annotated .highlight-activity { background: rgba(215, 251, 244, 0.5); padding: 0 2px; border-radius: 0; }
+    .step1-annotated .highlight-comfort { background: rgba(255, 228, 239, 0.5); padding: 0 2px; border-radius: 0; }
+    .step1-annotated .highlight-duration { background: rgba(226, 232, 255, 0.5); padding: 0 2px; border-radius: 0; }
+    .step1-annotated .highlight-context { background: rgba(222, 245, 255, 0.5); padding: 0 2px; border-radius: 0; }
+    .step1-annotated .highlight-label {
+      display: block;
+      font-family: var(--axis-font);
+      font-size: 12px;
+      font-weight: 200;
+      margin-top: 2px;
+      padding: 0 2px;
+      border-radius: 0;
+      text-align: center;
+    }
+    .step1-annotated .highlight-label-start { background: rgba(200, 242, 217, 0.5); color: #2f6f4e; }
+    .step1-annotated .highlight-label-destination { background: rgba(228, 219, 255, 0.5); color: #5a53a3; }
+    .step1-annotated .highlight-label-transit { background: rgba(210, 240, 255, 0.5); color: #0f6a78; }
+    .step1-annotated .highlight-label-weather { background: rgba(214, 229, 255, 0.5); color: #425b9a; }
+    .step1-annotated .highlight-label-activity { background: rgba(215, 251, 244, 0.5); color: #247c6c; }
+    .step1-annotated .highlight-label-comfort { background: rgba(255, 228, 239, 0.5); color: #b2577f; }
+    .step1-annotated .highlight-label-duration { background: rgba(226, 232, 255, 0.5); color: #4d5b99; }
+    .step1-annotated .highlight-label-context { background: rgba(222, 245, 255, 0.5); color: #3a6f80; }
+    .step1-annotated .sketchbook-line { display: block; margin-bottom: 4px; transform-origin: 0 50%; }
+    .step2-locations { font-size: 14px; margin-bottom: 8px; color: #333; }
+    .step2-locations .loc-line { margin: 2px 0; }
+    .segment-details-table-wrap { overflow-x: auto; margin-top: 6px; }
+    .segment-details-table { width: 100%; font-size: 14px; border-collapse: collapse; }
+    .segment-details-table th, .segment-details-table td { padding: 4px 6px; border: 1px solid #ddd; text-align: left; }
+    .segment-details-table th { background: #f5f5f5; font-weight: 600; }
+    .step2-timeline { font-size: 14px; margin-bottom: 8px; }
+    .step2-timeline .timeline-block {
+      margin-bottom: 10px;
+      padding: 0;
+      background: transparent;
+      border: none;
+      border-radius: 0;
+    }
+    .step2-timeline .timeline-block.timeline-location { border-left: none; }
+    .step2-timeline .timeline-block.timeline-leg { border-left: none; }
+    .step2-timeline .timeline-title { font-weight: 600; margin-bottom: 4px; }
+    .step2-timeline .timeline-meta { color: #555; margin: 2px 0; }
+    .step2-timeline .timeline-weather { font-size: 14px; color: #666; margin: 2px 0; }
+    .streetview-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4px;
+      margin: 8px 0;
+      padding: 0;
+      width: 100%;
+    }
+    .streetview-strip img.streetview-grid-img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 0;
+      filter: grayscale(1);
+      background: #eee;
+      display: block;
+    }
+    .streetview-strip .streetview-attribution {
+      grid-column: 1 / -1;
+      font-size: 10px;
+      color: #888;
+      margin-top: 4px;
+      text-align: right;
+    }
+    .route-advanced { margin-top: 12px; font-size: 14px; }
+    .route-advanced summary { cursor: pointer; color: #666; }
+    .calculation-process-box { font-size: 14px; color: #444; background: #f8f8f8; padding: 10px; border-radius: 0; border: 1px solid #eee; max-height: 420px; overflow-y: auto; }
+    .calc-flow-row { display: flex; align-items: center; gap: 6px; margin-bottom: 10px; flex-wrap: wrap; }
+    .calc-flow-row .calc-flow-label { font-weight: 600; min-width: 72px; font-size: 14px; }
+    .calc-flow-inputs { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+    .calc-flow-chip { font-size: 14px; padding: 2px 6px; background: #e0e0e0; border-radius: 0; white-space: nowrap; }
+    .calc-flow-arrow { color: #888; font-size: 14px; flex-shrink: 0; }
+    .calc-flow-formula { font-size: 14px; padding: 4px 8px; background: #fff; border: 1px solid #ddd; border-radius: 0; max-width: 280px; overflow-x: auto; }
+    .calc-flow-result { font-size: 14px; font-weight: 600; padding: 4px 10px; background: #333; color: #fff; border-radius: 0; min-width: 36px; text-align: center; }
+    .calc-flow-llm-source { font-size: 14px; padding: 4px 8px; background: #e8f5e9; border: 1px solid #a5d6a7; border-radius: 0; }
+    .calc-formula-block { margin-bottom: 12px; }
+    .calc-formula-name { font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 2px; }
+    .calc-formula-line { font-size: 14px; font-family: 'Poppins', system-ui, sans-serif; color: #333; margin-bottom: 2px; word-break: break-all; }
+    .calc-formula-equals { font-size: 14px; color: #666; margin-bottom: 1px; }
+    .calc-formula-result { font-size: 14px; font-weight: 700; color: #000; }
+    .calc-all-llm-intro { margin: 0 0 8px 0; font-style: italic; color: #666; font-size: 14px; }
+    #route-segments-list { margin-top: 8px; font-size: 14px; }
+    #route-segments-list ul { margin: 4px 0 0 0; padding-left: 18px; }
+    #route-segments-list li { margin-bottom: 2px; }
+    .segment-item { list-style: none; margin-left: -18px; margin-bottom: 10px; }
+    .segment-title { font-weight: 600; }
+    .segment-weather { font-size: 14px; color: #555; margin: 2px 0; }
+    .segment-context-row { margin-top: 4px; }
+    .segment-indoor-outdoor { font-size: 14px; padding: 2px 6px; border: 1px solid #ccc; border-radius: 0; }
+    .address-wrap { position: relative; }
+    .address-dropdown {
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      z-index: 100;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-top: none;
+      border-radius: 0 0 0 0;
+      max-height: 180px;
+      overflow-y: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .address-dropdown.is-open { display: block; }
+    .address-dropdown-item {
+      padding: 8px 10px;
+      font-size: 14px;
+      cursor: pointer;
+      border-bottom: 1px solid #eee;
+    }
+    .address-dropdown-item:last-child { border-bottom: none; }
+    .address-dropdown-item:hover { background: #f0f0f0; }
+    #metrics-title {
+      font-family: var(--axis-font);
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin: 0 0 8px 0;
+    }
+    #nl-input {
+      width: 100%;
+      min-height: 80px;
+      max-height: 140px;
+      resize: vertical;
+      border-radius: 0;
+      border: 1px solid #ddd;
+      padding: 8px 10px;
+      font-family: inherit;
+      font-size: 14px;
+      outline: none;
+      background: rgba(255,255,255,0.9);
+    }
+    #nl-input:focus {
+      border-color: #000;
+    }
+    #metrics-form, #nl-input {
+      text-align: left;
+    }
+    #plan-btn, #analyze-btn {
+      display: inline-block;
+      margin-top: 6px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 6px 10px;
+      font-size: 14px;
+      border-radius: 0;
+      border: 1px solid #000;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+    #plan-btn {
+      display: block;
+      margin: 10px auto 0 auto;
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      border-radius: 0;
+    }
+    #plan-btn:hover, #analyze-btn:hover { background: #333; }
+    #plan-btn:disabled, #analyze-btn:disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+    #metrics-help {
+      font-size: 14px;
+      color: #777;
+      line-height: 1.5;
+    }
+    .metric-row {
+      margin-top: 8px;
+    }
+    .metric-label-line {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+      margin-bottom: 4px;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-family: var(--axis-font);
+    }
+    .metric-value {
+      font-size: 12px;
+      font-style: italic;
+      letter-spacing: 0.04em;
+      text-transform: none;
+      opacity: 0.85;
+    }
+    .metric-bar {
+      display: none;
+    }
+    .metric-fill {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="ui">
+    <span id="status" class="disconnected" aria-label="Disconnected"></span>
+    <span id="received">No contour yet. Send binary from Grasshopper.</span>
+  </div>
+  <div id="layout">
+    <aside id="metrics-panel">
+      <div>
+        <h2 id="metrics-title" style="font-family: var(--axis-font); font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; margin: 0 0 8px 0;">What are you doing for your day?</h2>
+        <p style="margin:0 0 8px 0; font-size:14px; color:#333;">
+          Describe where you&apos;re going and what you&apos;re doing.
+        </p>
+        <form id="metrics-form">
+          <textarea id="nl-input" placeholder="e.g. Starting from Central Park, then heading to the office near Times Square, then a café in Brooklyn. Relaxed day, might get chilly later..."></textarea>
+          <button id="plan-btn" type="submit" aria-label="Plan route &amp; metrics"></button>
+        </form>
+        <p id="plan-status" style="font-size:14px; color:#666; margin-top:6px; min-height:1.2em;"></p>
+        <p id="metrics-help" style="margin-top:8px;"></p>
+      </div>
+        <div class="content-two-col">
+          <div class="content-visuals">
+            <div id="streetview-above" class="visual-card streetview-strip" style="display:none;" aria-label="Street-level imagery along the route"></div>
+            <div id="map-card" class="visual-card" style="display:none;">
+              <div id="map"></div>
+            </div>
+            <div id="streetview-mid" class="visual-card streetview-strip" style="display:none;" aria-label="Street-level imagery along the route"></div>
+            <div id="streetview-bottom" class="visual-card streetview-strip" style="display:none;" aria-label="Street-level imagery along the route"></div>
+          </div>
+          <div class="content-text">
+            <section class="pipeline-step" id="step1-section">
+              <div id="step1-legend" class="step1-legend" style="display:none;"></div>
+              <div id="step1-annotated" class="step1-annotated"></div>
+              <p id="step1-empty" class="step-empty"></p>
+            </section>
+          </div>
+        </div>
+
+        <!-- Step 2 – Extracted route -->
+        <section class="pipeline-step" id="step2-section">
+          <div id="step2-timeline" class="step2-timeline"></div>
+          <p id="step2-empty" class="step-empty"></p>
+          <div id="step2-segment-details" style="display:none;">
+            <strong>Segment details</strong>
+            <div class="segment-details-table-wrap">
+              <table id="step2-segments-table" class="segment-details-table"></table>
+            </div>
+          </div>
+          <div id="route-segments-list" style="display:none;">
+            <strong>Segments</strong>
+            <ul id="route-segments-ul"></ul>
+          </div>
+        </section>
+
+        <!-- Step 3 – How each metric is calculated -->
+        <section class="pipeline-step" id="step3-section">
+          <div id="calculation-process" class="calculation-process-box"></div>
+          <p id="step3-empty" class="step-empty"></p>
+        </section>
+
+        <!-- Step 4 – Final metrics -->
+        <section class="pipeline-step" id="step4-section">
+          <p style="font-size:14px; color:#333; margin:0 0 8px 0;"></p>
+      <div id="metrics-sliders" style="margin-top:16px;">
+        <div class="metric-row" data-metric="Fit">
+          <div class="metric-label-line">
+            <span>Fit (close → loose)</span>
+            <span class="metric-value" id="metric-fit-val">0.00</span>
+          </div>
+          <div class="metric-bar">
+            <div class="metric-fill" id="metric-fit-bar"></div>
+          </div>
+        </div>
+        <div class="metric-row" data-metric="Mesh">
+          <div class="metric-label-line">
+            <span>Mesh (open → fine)</span>
+            <span class="metric-value" id="metric-mesh-val">0.00</span>
+          </div>
+          <div class="metric-bar">
+            <div class="metric-fill" id="metric-mesh-bar"></div>
+          </div>
+        </div>
+        <div class="metric-row" data-metric="Thickness">
+          <div class="metric-label-line">
+            <span>Thickness (thin → thick)</span>
+            <span class="metric-value" id="metric-thickness-val">0.00</span>
+          </div>
+          <div class="metric-bar">
+            <div class="metric-fill" id="metric-thickness-bar"></div>
+          </div>
+        </div>
+        <div class="metric-row" data-metric="Airflow">
+          <div class="metric-label-line">
+            <span>Airflow (breathable → sealed)</span>
+            <span class="metric-value" id="metric-airflow-val">0.00</span>
+          </div>
+          <div class="metric-bar">
+            <div class="metric-fill" id="metric-airflow-bar"></div>
+          </div>
+        </div>
+        <div class="metric-row" data-metric="Support">
+          <div class="metric-label-line">
+            <span>Support (soft → rigid)</span>
+            <span class="metric-value" id="metric-support-val">0.00</span>
+          </div>
+          <div class="metric-bar">
+            <div class="metric-fill" id="metric-support-bar"></div>
+          </div>
+        </div>
+        <div class="metric-row" data-metric="Comfort">
+          <div class="metric-label-line">
+            <span>Comfort / Aesthetic (utilitarian → indulgent)</span>
+            <span class="metric-value" id="metric-comfort-val">0.00</span>
+          </div>
+          <div class="metric-bar">
+            <div class="metric-fill" id="metric-comfort-bar"></div>
+          </div>
+        </div>
+        <div class="metric-row" data-metric="DressLength">
+          <div class="metric-label-line">
+            <span>Dress length (short → long)</span>
+            <span class="metric-value" id="metric-dresslength-val">0.00</span>
+          </div>
+          <div class="metric-bar">
+            <div class="metric-fill" id="metric-dresslength-bar"></div>
+          </div>
+        </div>
+        <div class="metric-row" data-metric="DressSize">
+          <div class="metric-label-line">
+            <span>Hem width (narrow → wide)</span>
+            <span class="metric-value" id="metric-dresssize-val">0.00</span>
+          </div>
+          <div class="metric-bar">
+            <div class="metric-fill" id="metric-dresssize-bar"></div>
+          </div>
+        </div>
+      </div>
+        </section>
+        <div id="visual-panel">
+          <div id="sim-debug" aria-live="polite">Canvas: — × — | Contours: 0</div>
+          <canvas id="canvas"></canvas>
+        </div>
+        <button type="button" id="fabricate-btn">Fabricate</button>
+    </aside>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module">
+    import * as THREE from "three";
+    import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+    import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
+    import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
+    import { ShaderPass } from "three/addons/postprocessing/ShaderPass.js";
+    import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
+
+    const InvertShader = {
+      uniforms: { tDiffuse: { value: null } },
+      vertexShader: /* glsl */`
+        varying vec2 vUv;
+        void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }
+      `,
+      fragmentShader: /* glsl */`
+        uniform sampler2D tDiffuse;
+        varying vec2 vUv;
+        void main() {
+          gl_FragColor = vec4(1.0 - texture2D(tDiffuse, vUv).rgb, 1.0);
+        }
+      `
+    };
+
+    const WS_ENABLED = false; // set true to connect to Grasshopper WebSocket (ws://127.0.0.1:9000)
+    const WS_URL = "ws://127.0.0.1:9000";
+    const statusEl = document.getElementById("status");
+    const canvas = document.getElementById("canvas");
+    const visualPanel = document.getElementById("visual-panel");
+    const nlInput = document.getElementById("nl-input");
+    const planBtn = document.getElementById("plan-btn");
+    const metricsForm = document.getElementById("metrics-form");
+    const sendGhBtn = document.getElementById("send-gh-btn");
+    let lastMetrics = null;
+    let lastMetricBreakdown = null;
+    const metricEls = {
+      Fit: {
+        val: document.getElementById("metric-fit-val"),
+        bar: document.getElementById("metric-fit-bar")
+      },
+      Mesh: {
+        val: document.getElementById("metric-mesh-val"),
+        bar: document.getElementById("metric-mesh-bar")
+      },
+      Thickness: {
+        val: document.getElementById("metric-thickness-val"),
+        bar: document.getElementById("metric-thickness-bar")
+      },
+      Airflow: {
+        val: document.getElementById("metric-airflow-val"),
+        bar: document.getElementById("metric-airflow-bar")
+      },
+      Support: {
+        val: document.getElementById("metric-support-val"),
+        bar: document.getElementById("metric-support-bar")
+      },
+      Comfort: {
+        val: document.getElementById("metric-comfort-val"),
+        bar: document.getElementById("metric-comfort-bar")
+      },
+      DressLength: {
+        val: document.getElementById("metric-dresslength-val"),
+        bar: document.getElementById("metric-dresslength-bar")
+      },
+      DressSize: {
+        val: document.getElementById("metric-dresssize-val"),
+        bar: document.getElementById("metric-dresssize-bar")
+      }
+    };
+
+    // —— Route & map (step 1: map + search + segmented routes) ——
+    const NOMINATIM_UA = "ShowcaseGarmentApp/1.0";
+    const OSRM_BASE = "https://router.project-osrm.org/route/v1";
+    /** Typical speeds (m/s) for client-side duration when public OSRM returns same route for all profiles. */
+    const PROFILE_SPEED_MS = { foot: 1.39, bike: 4.17, driving: 11.11 };
+    const OPEN_METEO_BASE = "https://api.open-meteo.com/v1/forecast";
+    let map = null;
+    let routeLayer = null;
+    /** @type {{ waypoints: Array<{name:string,lat:number,lon:number}>, legs: Array<{fromIndex:number,toIndex:number,duration_sec:number,distance_m:number,geometry:[number,number][]}>, fullGeometry: [number,number][] }} */
+    let routeSegments = { waypoints: [], legs: [], fullGeometry: [] };
+
+    function initMap() {
+      if (map || typeof L === "undefined") return;
+      const el = document.getElementById("map");
+      if (!el) return;
+      // Hide built-in + / - zoom buttons for a more immersive map,
+      // but keep scroll wheel zoom enabled.
+      map = L.map("map", { zoomControl: false }).setView([40.78, -73.97], 12);
+      // Esri World Imagery (satellite) tiles
+      L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
+        attribution: "Tiles © Esri — Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
+        maxZoom: 19
+      }).addTo(map);
+      routeLayer = L.layerGroup().addTo(map);
+    }
+
+    /** Minimal circle marker icon for route waypoints (no teardrop). */
+    function createMinimalMarkerIcon() {
+      return L.divIcon({
+        className: "minimal-marker-icon",
+        html: "<span class=\"minimal-marker-dot\"></span>",
+        iconSize: [24, 24],
+        iconAnchor: [12, 12]
+      });
+    }
+
+    /** Keep ~1/factor of the route points. */
+    function downsampleRouteLine(points, factor) {
+      if (!points || points.length < 2 || factor <= 1) return points;
+      const out = [];
+      const step = Math.max(1, Math.floor(points.length / Math.max(1, Math.ceil(points.length / factor))));
+      for (let i = 0; i < points.length; i += step) out.push([points[i][0], points[i][1]]);
+      const last = points[points.length - 1];
+      if (out.length && (out[out.length - 1][0] !== last[0] || out[out.length - 1][1] !== last[1])) out.push([last[0], last[1]]);
+      return out.length ? out : points;
+    }
+
+    /**
+     * Smooth route with a simple moving-average style filter.
+     * Does not add extra sample points; just relaxes angles.
+     */
+    function smoothRouteLine(points) {
+      if (!points || points.length < 3) return points;
+      const out = points.map((p) => [p[0], p[1]]);
+      const passes = 4;
+      for (let pass = 0; pass < passes; pass++) {
+        for (let i = 1; i < out.length - 1; i++) {
+          const prev = out[i - 1];
+          const curr = out[i];
+          const next = out[i + 1];
+          out[i][0] = 0.25 * prev[0] + 0.5 * curr[0] + 0.25 * next[0];
+          out[i][1] = 0.25 * prev[1] + 0.5 * curr[1] + 0.25 * next[1];
+        }
+      }
+      return out;
+    }
+
+    /** Jitter route points at 30–60° to the segment (perpendicular-ish, relaxed). */
+    function jitterRouteLine(points) {
+      if (!points || points.length < 3) return points;
+      const magnitude = 0.0002;
+      const out = points.map((p) => [p[0], p[1]]);
+      const toRad = Math.PI / 180;
+      for (let i = 1; i < out.length - 1; i++) {
+        const dlat = points[i + 1][0] - points[i][0];
+        const dlng = points[i + 1][1] - points[i][1];
+        const segAngle = Math.atan2(dlng, dlat);
+        const degOff = 30 + Math.random() * 30;
+        const jitterAngle = segAngle + (Math.random() > 0.5 ? 1 : -1) * degOff * toRad;
+        out[i][0] += magnitude * Math.cos(jitterAngle);
+        out[i][1] += magnitude * Math.sin(jitterAngle);
+      }
+      return out;
+    }
+
+    /** Bearing in degrees 0–360 from (lat1,lon1) to (lat2,lon2). */
+    function bearingDeg(lat1, lon1, lat2, lon2) {
+      const dlon = (lon2 - lon1) * Math.PI / 180;
+      const lat1r = lat1 * Math.PI / 180;
+      const lat2r = lat2 * Math.PI / 180;
+      const x = Math.sin(dlon) * Math.cos(lat2r);
+      const y = Math.cos(lat1r) * Math.sin(lat2r) - Math.sin(lat1r) * Math.cos(lat2r) * Math.cos(dlon);
+      let b = Math.atan2(x, y) * 180 / Math.PI;
+      if (b < 0) b += 360;
+      return b;
+    }
+
+    /** Sample up to maxPoints along the route for imagery (lat, lon, heading). */
+    function sampleStreetViewPoints(routeSegments, maxPoints) {
+      maxPoints = maxPoints || 6;
+      const waypoints = routeSegments?.waypoints || [];
+      const legs = routeSegments?.legs || [];
+      if (!waypoints.length || !legs.length) return [];
+      const out = [];
+      if (waypoints.length >= 2) {
+        const wp0 = waypoints[0];
+        const wp1 = waypoints[1];
+        out.push({
+          lat: wp0.lat,
+          lon: wp0.lon,
+          heading: Math.round(bearingDeg(wp0.lat, wp0.lon, wp1.lat, wp1.lon))
+        });
+      }
+      for (let i = 0; i < legs.length && out.length < maxPoints; i++) {
+        const leg = legs[i];
+        const from = waypoints[leg.fromIndex];
+        const to = waypoints[leg.toIndex];
+        if (!from || !to) continue;
+        const midLat = (from.lat + to.lat) / 2;
+        const midLon = (from.lon + to.lon) / 2;
+        out.push({
+          lat: midLat,
+          lon: midLon,
+          heading: Math.round(bearingDeg(from.lat, from.lon, to.lat, to.lon))
+        });
+      }
+      return out.slice(0, maxPoints);
+    }
+
+    /** One point per waypoint (lat, lon, heading) for location imagery. */
+    function getLocationImageryPoints(routeSegments) {
+      const waypoints = routeSegments?.waypoints || [];
+      const legs = routeSegments?.legs || [];
+      if (!waypoints.length) return [];
+      const out = [];
+      for (let i = 0; i < waypoints.length; i++) {
+        const wp = waypoints[i];
+        let heading = 0;
+        if (waypoints.length > 1) {
+          if (i < waypoints.length - 1) heading = Math.round(bearingDeg(wp.lat, wp.lon, waypoints[i + 1].lat, waypoints[i + 1].lon));
+          else heading = Math.round(bearingDeg(waypoints[i - 1].lat, waypoints[i - 1].lon, wp.lat, wp.lon));
+        }
+        out.push({ lat: wp.lat, lon: wp.lon, heading });
+      }
+      return out;
+    }
+
+    /** Three points per leg (lat, lon, heading) along leg geometry or from→to line. */
+    function getLegImageryPoints(routeSegments) {
+      const waypoints = routeSegments?.waypoints || [];
+      const legs = routeSegments?.legs || [];
+      if (!legs.length) return [];
+      const out = [];
+      for (let i = 0; i < legs.length; i++) {
+        const leg = legs[i];
+        const from = waypoints[leg.fromIndex];
+        const to = waypoints[leg.toIndex];
+        if (!from || !to) {
+          out.push([]);
+          continue;
+        }
+        const heading = Math.round(bearingDeg(from.lat, from.lon, to.lat, to.lon));
+        const pts = [];
+        const geom = leg.geometry && leg.geometry.length >= 2 ? leg.geometry : [[from.lon, from.lat], [to.lon, to.lat]];
+        for (let k = 0; k < 3; k++) {
+          const t = (k + 1) / 4;
+          const idx = Math.min(Math.floor(t * (geom.length - 1)), geom.length - 2);
+          const frac = geom.length > 1 ? (t * (geom.length - 1)) - idx : 0;
+          const c0 = geom[idx];
+          const c1 = geom[idx + 1];
+          const lon = c0[0] + frac * (c1[0] - c0[0]);
+          const lat = c0[1] + frac * (c1[1] - c0[1]);
+          pts.push({ lat, lon, heading });
+        }
+        out.push(pts);
+      }
+      return out;
+    }
+
+    /** Build Google Street View Static API URL for a point. Returns URL or null. */
+    async function fetchGoogleStreetViewImageForPoint(lat, lon, heading, apiKey) {
+      const key = (apiKey || "").trim();
+      if (!key) return null;
+      const safeHeading = Number.isFinite(heading) ? Math.round(heading) : 0;
+      const size = "400x400";
+      return `https://maps.googleapis.com/maps/api/streetview?size=${size}&location=${lat},${lon}&fov=90&heading=${safeHeading}&pitch=0&source=outdoor&key=${key}`;
+    }
+
+    /** Populate street-level imagery: 1 image above map, 2 below (3 total, 4 cards). */
+    async function updateStreetViewStrip(routeSegments) {
+      const aboveEl = document.getElementById("streetview-above");
+      const midEl = document.getElementById("streetview-mid");
+      const bottomEl = document.getElementById("streetview-bottom");
+      const mapCard = document.getElementById("map-card");
+      if (!aboveEl || !midEl || !bottomEl) return;
+      const apiKey = typeof window.GOOGLE_MAPS_API_KEY !== "undefined" ? window.GOOGLE_MAPS_API_KEY : "";
+      const full = routeSegments?.fullGeometry || [];
+      aboveEl.innerHTML = "";
+      midEl.innerHTML = "";
+      bottomEl.innerHTML = "";
+      aboveEl.style.display = "none";
+      midEl.style.display = "none";
+      bottomEl.style.display = "none";
+      if (mapCard) mapCard.style.display = "none";
+      if (!apiKey || !full.length || full.length < 2) return;
+      const n = full.length;
+      const samples = 3;
+      const urls = [];
+      for (let i = 0; i < samples; i++) {
+        const t = (i + 0.5) / samples;
+        const pos = t * (n - 1);
+        const idx = Math.min(Math.floor(pos), n - 2);
+        const frac = pos - idx;
+        const c0 = full[idx];
+        const c1 = full[idx + 1];
+        const lon0 = c0[0], lat0 = c0[1];
+        const lon1 = c1[0], lat1 = c1[1];
+        const lon = lon0 + frac * (lon1 - lon0);
+        const lat = lat0 + frac * (lat1 - lat0);
+        const heading = bearingDeg(lat0, lon0, lat1, lon1);
+        const url = await fetchGoogleStreetViewImageForPoint(lat, lon, heading, apiKey);
+        if (url) urls.push(url);
+      }
+      if (urls.length === 0) return;
+      if (mapCard) mapCard.style.display = "block";
+      if (map && routeSegments?.fullGeometry?.length) {
+        map.invalidateSize();
+        const latLngs = routeSegments.fullGeometry.map((c) => [c[1], c[0]]);
+        map.fitBounds(latLngs, { padding: [20, 20] });
+      }
+      const imgClass = "streetview-grid-img";
+      if (urls[0]) {
+        aboveEl.innerHTML = `<img class="${imgClass}" src="${escapeHtml(urls[0])}" alt="Street-level imagery along route">`;
+        aboveEl.style.display = "block";
+      }
+      if (urls[1]) {
+        midEl.innerHTML = `<img class="${imgClass}" src="${escapeHtml(urls[1])}" alt="Street-level imagery along route">`;
+        midEl.style.display = "block";
+      }
+      if (urls[2]) {
+        bottomEl.innerHTML = `<img class="${imgClass}" src="${escapeHtml(urls[2])}" alt="Street-level imagery along route"><div class="streetview-attribution">© Google Street View</div>`;
+        bottomEl.style.display = "block";
+      }
+    }
+
+    async function geocode(q) {
+      const query = encodeURIComponent((q || "").trim());
+      if (!query) return null;
+      const res = await fetch(
+        `https://nominatim.openstreetmap.org/search?q=${query}&format=json&limit=1`,
+        { headers: { "User-Agent": NOMINATIM_UA } }
+      );
+      if (!res.ok) return null;
+      const data = await res.json();
+      const first = data && data[0];
+      if (!first) return null;
+      return { lat: parseFloat(first.lat), lon: parseFloat(first.lon), name: first.display_name };
+    }
+
+    /** Fetch multiple Nominatim results for autocomplete (key-free). */
+    async function searchNominatim(q) {
+      const query = encodeURIComponent((q || "").trim());
+      if (!query || query.length < 2) return [];
+      const res = await fetch(
+        `https://nominatim.openstreetmap.org/search?q=${query}&format=json&limit=5`,
+        { headers: { "User-Agent": NOMINATIM_UA } }
+      );
+      if (!res.ok) return [];
+      const data = await res.json();
+      return (data || []).map((item) => ({
+        lat: parseFloat(item.lat),
+        lon: parseFloat(item.lon),
+        name: item.display_name
+      }));
+    }
+
+    function getDestInputsInOrder() {
+      const container = document.getElementById("destinations-container");
+      if (!container) return [];
+      const rows = container.querySelectorAll(".waypoint-row");
+      const inputs = [];
+      rows.forEach((row) => {
+        const input = row.querySelector(".address-wrap input[type='text']");
+        if (input) inputs.push(input);
+      });
+      return inputs;
+    }
+
+    /** Fetch current weather at lat/lon (Open-Meteo, key-free). Returns temp °C, humidity %, wind_speed m/s. */
+    async function fetchWeather(lat, lon) {
+      const url = `${OPEN_METEO_BASE}?latitude=${lat}&longitude=${lon}&current=temperature_2m,relative_humidity_2m,wind_speed_10m&wind_speed_unit=ms`;
+      const res = await fetch(url);
+      if (!res.ok) return null;
+      const data = await res.json();
+      const c = data?.current;
+      if (!c) return null;
+      return {
+        temp: c.temperature_2m ?? 15,
+        humidity: c.relative_humidity_2m ?? 50,
+        wind_speed: c.wind_speed_10m ?? 0
+      };
+    }
+
+    /** Call 1 – Route only: start, start_label, start_stay_min, destinations, transit_mode. Focused prompt for consistency. */
+    async function extractRouteFromText(text, apiKey) {
+      const res = await fetch("https://api.openai.com/v1/chat/completions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${apiKey}`
+        },
+        body: JSON.stringify({
+          model: "gpt-4o",
+          response_format: { type: "json_object" },
+          messages: [
+            {
+              role: "system",
+              content: `You extract only the route structure from a short description of someone's day. Return JSON only, no highlights.
+
+Output shape:
+{ "start": "geocodable place name", "start_label": "SHORT_LABEL or null", "start_stay_min": number or null, "destinations": [{"name": "geocodable place", "label": "SHORT_LABEL or null", "stay_min": number or null}], "transit_mode": "walking"|"cycling"|"driving" }
+
+Rules:
+- start: where they begin. Use the most specific geocodable name (e.g. "Central Park, New York", "11 East 32nd Street, Manhattan, NYC").
+- start_label: short label for the start location (e.g. HOME, My place). Use null if unclear.
+- start_stay_min: minutes at start before leaving. Only if stated (e.g. "45 min at home" → 45, "half an hour" → 30). Use null if not stated.
+- destinations: ordered list of stops. Each object must have "name" (geocodable), optional "label" (e.g. OFFICE, CAFE, GYM), optional "stay_min" (minutes at that place). Examples: "at the office for 4h 45 min" → stay_min 285; "quick 20 min at the café" → stay_min 20; "all morning" → ~180. Use numbers only for stay_min.
+- transit_mode: walking, cycling, or driving from context; default walking.
+
+If the text does not describe a multi-stop route, return start as empty string and destinations as []. Output only valid JSON.`
+            },
+            { role: "user", content: text }
+          ]
+        })
+      });
+      if (!res.ok) return null;
+      const data = await res.json();
+      const content = data.choices?.[0]?.message?.content;
+      if (!content) return null;
+      try {
+        const p = JSON.parse(content);
+        const destRaw = Array.isArray(p.destinations) ? p.destinations : [];
+        const destinations = destRaw.map((d) => {
+          if (typeof d === "object" && d !== null && typeof d.name === "string") {
+            const name = d.name.trim();
+            if (!name) return null;
+            const stay = d.stay_min != null ? (typeof d.stay_min === "number" ? d.stay_min : parseInt(d.stay_min, 10)) : null;
+            return { name, label: typeof d.label === "string" ? d.label.trim() || null : null, stay_min: Number.isFinite(stay) ? stay : null };
+          }
+          if (typeof d === "string" && d.trim()) return { name: d.trim(), label: null, stay_min: null };
+          return null;
+        }).filter(Boolean);
+        const startStay = p.start_stay_min != null ? (typeof p.start_stay_min === "number" ? p.start_stay_min : parseInt(p.start_stay_min, 10)) : null;
+        return {
+          start: typeof p.start === "string" ? p.start.trim() : "",
+          start_label: typeof p.start_label === "string" ? p.start_label.trim() || null : null,
+          start_stay_min: Number.isFinite(startStay) ? startStay : null,
+          destinations,
+          transit_mode: ["walking", "cycling", "driving"].includes(p.transit_mode) ? p.transit_mode : "walking"
+        };
+      } catch (e) {
+        return null;
+      }
+    }
+
+    /** Call 2 – Highlights only: same text, focused on highlights with exact substring and examples. */
+    async function extractHighlightsFromText(text, apiKey) {
+      const res = await fetch("https://api.openai.com/v1/chat/completions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${apiKey}`
+        },
+        body: JSON.stringify({
+          model: "gpt-4o",
+          response_format: { type: "json_object" },
+          messages: [
+            {
+              role: "system",
+              content: `You identify spans in the user's message to highlight by type. Return JSON only: { "highlights": [{"type": "start"|"destination"|"transit"|"weather"|"activity"|"comfort"|"duration"|"context", "text": "exact span from user message"}] }
+
+CRITICAL – Exact substring: Copy each span from the user message exactly, character-for-character. Do not rephrase, add punctuation, or change spelling. "text" must appear in the user message as-is (we match it literally). If the user wrote "for  a  couple of hours", your "text" must be exactly that.
+
+Types and example phrases (your "text" must match the user's words exactly):
+- start: origin (e.g. "Starting from Central Park", "from my place in Brooklyn")
+- destination: each stop (e.g. "the office near Times Square", "a café in Brooklyn")
+- transit: how they move (e.g. "walking", "by bike", "driving")
+- weather: temp/conditions (e.g. "chilly later", "might rain", "really hot")
+- activity: what they're doing / formality (e.g. "quick errands", "formal meeting", "casual day")
+- comfort: comfort/aesthetic (e.g. "cozy", "want to feel comfortable", "dress up")
+- duration: time spent (e.g. "for a couple of hours", "all morning", "briefly", "about 20 minutes", "for a little while", "half the day")
+- context: mood/situation (e.g. "formal", "not in a rush", "cozy day", "relaxed", "low key", "in a hurry")
+
+Example 1 – User message: "Starting from Central Park, then heading to the office near Times Square for a couple of hours. Walking, might get chilly. Cozy day."
+Expected highlights (exact substrings): start "Starting from Central Park", destination "the office near Times Square", duration "for a couple of hours", transit "Walking", weather "might get chilly", context "Cozy day."
+
+Example 2 – User message: "From home I drive to the gym for about 20 minutes then relax at a café. Not in a rush."
+Expected: start "From home", transit "drive", destination "the gym", duration "about 20 minutes", destination "a café", context "Not in a rush."
+
+Include every span that clearly matches a type. Omit a type if nothing matches. Output only valid JSON with a "highlights" array. You may optionally include start_index and end_index (0-based character indices into the user message) for each highlight; if present we will use them for precise placement.`
+            },
+            { role: "user", content: text }
+          ]
+        })
+      });
+      if (!res.ok) return null;
+      const data = await res.json();
+      const content = data.choices?.[0]?.message?.content;
+      if (!content) return null;
+      try {
+        const p = JSON.parse(content);
+        const highlightTypes = ["start", "destination", "transit", "weather", "activity", "comfort", "duration", "context"];
+        const highlights = Array.isArray(p.highlights)
+          ? p.highlights
+            .filter((h) => h && highlightTypes.includes(h.type) && (typeof h.text === "string" && h.text.trim() || (typeof h.start_index === "number" && typeof h.end_index === "number")))
+            .map((h) => {
+              const text = typeof h.text === "string" ? h.text.trim() : "";
+              const start = h.start_index;
+              const end = h.end_index;
+              return { type: h.type, text, start_index: typeof start === "number" && start >= 0 ? start : undefined, end_index: typeof end === "number" && end > start ? end : undefined };
+            })
+          : [];
+        return { highlights };
+      } catch (e) {
+        return null;
+      }
+    }
+
+    /** Combined: run route-only and highlights-only calls, then merge. Returns same shape as before for compatibility. */
+    async function extractLocationsFromText(text, apiKey) {
+      const [route, highlightsResult] = await Promise.all([
+        extractRouteFromText(text, apiKey),
+        extractHighlightsFromText(text, apiKey)
+      ]);
+      const highlights = highlightsResult?.highlights ?? [];
+      if (!route) return null;
+      return {
+        start: route.start,
+        start_label: route.start_label,
+        start_stay_min: route.start_stay_min,
+        destinations: route.destinations,
+        transit_mode: route.transit_mode,
+        highlights
+      };
+    }
+
+    /** Build HTML with highlighted spans and label under each span. Uses exact match, then normalized (collapse spaces), then offsets if provided. */
+    const HIGHLIGHT_LABELS = { start: "Start", destination: "Destination", transit: "Transit", weather: "Weather", activity: "Activity", comfort: "Comfort", duration: "Duration", context: "Context" };
+
+    function normalizeForMatch(s) {
+      return (s || "").trim().replace(/\s+/g, " ");
+    }
+    /** Build normalized version of user text (trim, collapse spaces) and mapping: normalizedIndex -> originalIndex. */
+    function buildNormalizedMapping(userText) {
+      const s = userText || "";
+      let normalized = "";
+      const mapping = [];
+      let i = 0;
+      let lastWasSpace = true;
+      while (i < s.length) {
+        const isSpace = /\s/.test(s[i]);
+        if (isSpace) {
+          if (!lastWasSpace) { normalized += " "; mapping.push(i); }
+          lastWasSpace = true;
+          i++;
+        } else {
+          normalized += s[i];
+          mapping.push(i);
+          lastWasSpace = false;
+          i++;
+        }
+      }
+      const mapOffset = (idx) => (idx < 0 || idx >= mapping.length) ? -1 : mapping[idx];
+      return { normalized, mapping, length: normalized.length, mapOffset };
+    }
+
+    /** Resolve a highlight to { start, end, type } in original user text. Tries: offsets, exact text, normalized text, normalized case-insensitive. */
+    function findHighlightSpan(userText, h) {
+      const len = userText.length;
+      if (typeof h.start_index === "number" && typeof h.end_index === "number" && h.start_index >= 0 && h.end_index > h.start_index && h.end_index <= len) {
+        return { start: h.start_index, end: h.end_index, type: h.type };
+      }
+      const text = (h.text || "").trim();
+      if (!text) return null;
+      let idx = userText.indexOf(text);
+      if (idx !== -1) return { start: idx, end: idx + text.length, type: h.type };
+      const { normalized, mapOffset } = buildNormalizedMapping(userText);
+      const normText = normalizeForMatch(text);
+      idx = normalized.indexOf(normText);
+      if (idx !== -1) {
+        const endNorm = idx + normText.length;
+        const startOrig = mapOffset(idx);
+        const endOrig = endNorm <= normalized.length ? (mapOffset(endNorm - 1) + 1) : startOrig + normText.length;
+        if (startOrig >= 0 && endOrig <= len) return { start: startOrig, end: endOrig, type: h.type };
+      }
+      const lower = normalized.toLowerCase();
+      idx = lower.indexOf(normText.toLowerCase());
+      if (idx !== -1) {
+        const endNorm = idx + normText.length;
+        const startOrig = mapOffset(idx);
+        const endOrig = endNorm <= normalized.length ? (mapOffset(endNorm - 1) + 1) : startOrig + normText.length;
+        if (startOrig >= 0 && endOrig <= len) return { start: startOrig, end: endOrig, type: h.type };
+      }
+      return null;
+    }
+
+    function buildAnnotatedHtml(userText, highlights) {
+      if (!highlights || !highlights.length) return escapeHtml(userText);
+      const spans = [];
+      highlights.forEach((h) => {
+        const span = findHighlightSpan(userText, h);
+        if (span) spans.push(span);
+      });
+      spans.sort((a, b) => a.start - b.start);
+      const merged = [];
+      spans.forEach((s) => {
+        const last = merged[merged.length - 1];
+        if (last && s.start < last.end) {
+          if (s.end > last.end) last.end = s.end;
+        } else merged.push({ ...s });
+      });
+      let out = "";
+      let pos = 0;
+      merged.forEach((s) => {
+        out += escapeHtml(userText.slice(pos, s.start));
+        const label = HIGHLIGHT_LABELS[s.type] || s.type;
+        out += `<span class="highlight-wrap"><span class="highlight-${s.type}">${escapeHtml(userText.slice(s.start, s.end))}</span><span class="highlight-label highlight-label-${s.type}">${escapeHtml(label)}</span></span>`;
+        pos = s.end;
+      });
+      out += escapeHtml(userText.slice(pos));
+      return out;
+    }
+    function escapeHtml(s) {
+      const div = document.createElement("div");
+      div.textContent = s;
+      return div.innerHTML;
+    }
+
+    /** Run route + weather from waypoint strings (no DOM). Updates routeSegments, map, segment list. destStrs: array of strings (place names). */
+    async function runRouteFromWaypoints(startStr, destStrs, profile, statusEl) {
+      const listEl = document.getElementById("route-segments-list");
+      const setStatus = (msg) => { if (statusEl) statusEl.textContent = msg; };
+      if (!startStr || !destStrs || !destStrs.length) return false;
+      const profileSelect = document.getElementById("route-profile");
+      if (profileSelect) profileSelect.value = profile;
+      const osrmProfile = { walking: "foot", cycling: "bike", driving: "driving" }[profile] || "foot";
+      setStatus("Geocoding…");
+      const allQueries = [startStr, ...destStrs];
+      const coords = [];
+      const names = [];
+      for (let i = 0; i < allQueries.length; i++) {
+        setStatus(`Geocoding ${i + 1}/${allQueries.length}…`);
+        const result = await geocode(allQueries[i]);
+        if (!result) {
+          setStatus(`Could not find: "${allQueries[i]}"`);
+          return false;
+        }
+        coords.push([result.lon, result.lat]);
+        names.push(result.name);
+      }
+      setStatus("Routing…");
+      const coordStr = coords.map((c) => c.join(",")).join(";");
+      let res;
+      try {
+        res = await fetch(`${OSRM_BASE}/${osrmProfile}/${coordStr}?overview=full&geometries=geojson`);
+      } catch (e) {
+        setStatus("Route request failed.");
+        return false;
+      }
+      if (!res.ok) {
+        setStatus("No route found.");
+        return false;
+      }
+      const data = await res.json();
+      const route = data.routes && data.routes[0];
+      if (!route || !route.geometry || !route.legs || !route.legs.length) {
+        setStatus("No route geometry.");
+        return false;
+      }
+      const fullGeometry = route.geometry.coordinates || [];
+      const waypoints = names.map((name, i) => ({ name, lat: coords[i][1], lon: coords[i][0] }));
+      const speedMs = PROFILE_SPEED_MS[osrmProfile] || PROFILE_SPEED_MS.foot;
+      const legs = route.legs.map((leg, i) => {
+        const pts = [];
+        if (leg.steps && leg.steps.length) {
+          leg.steps.forEach((step) => {
+            const g = step.geometry && step.geometry.coordinates;
+            if (g) g.forEach((c) => pts.push(c));
+          });
+        }
+        const distance_m = leg.distance || 0;
+        const duration_sec = speedMs > 0 ? Math.round(distance_m / speedMs) : (leg.duration || 0);
+        return { fromIndex: i, toIndex: i + 1, duration_sec, distance_m, geometry: pts.length ? pts : fullGeometry };
+      });
+      const totalDurationSec = legs.reduce((sum, leg) => sum + leg.duration_sec, 0);
+      legs.forEach((leg) => {
+        leg.time_weight = totalDurationSec > 0 ? leg.duration_sec / totalDurationSec : 0;
+        leg.indoor_outdoor = "outdoor";
+      });
+      routeSegments = { waypoints, legs, fullGeometry };
+      initMap();
+      if (routeLayer) routeLayer.clearLayers();
+      const latLngs = fullGeometry.map((c) => [c[1], c[0]]);
+      const drawnLine = jitterRouteLine(smoothRouteLine(downsampleRouteLine(latLngs, 2)));
+      L.polyline(drawnLine, { color: "#ffffff", weight: 2 }).addTo(routeLayer);
+      waypoints.forEach((wp, i) => {
+        const label = wp.name || (i === 0 ? "Start" : `Destination ${i}`);
+        L.marker([wp.lat, wp.lon], { icon: createMinimalMarkerIcon() }).bindTooltip(label, { permanent: false }).addTo(routeLayer);
+      });
+      if (map && latLngs.length) map.fitBounds(latLngs, { padding: [20, 20] });
+      updateSegmentsList(waypoints, legs);
+      if (listEl) listEl.style.display = "block";
+      updateStep2FromRoute();
+      updateStep2SegmentTable();
+      setStatus("Fetching weather…");
+      for (let i = 0; i < legs.length; i++) {
+        const leg = legs[i];
+        const fromWp = waypoints[leg.fromIndex];
+        const toWp = waypoints[leg.toIndex];
+        const midLat = (fromWp.lat + toWp.lat) / 2;
+        const midLon = (fromWp.lon + toWp.lon) / 2;
+        leg.weather = await fetchWeather(midLat, midLon);
+        if (i < legs.length - 1) await new Promise((r) => setTimeout(r, 200));
+      }
+      updateSegmentsList(waypoints, legs);
+      updateStep2FromRoute();
+      updateStep2SegmentTable();
+      setStatus(`Route: ${(route.distance / 1000).toFixed(1)} km, ${Math.round(totalDurationSec / 60)} min.`);
+      return true;
+    }
+
+    /** Merge extracted labels and stay_min into routeSegments.waypoints. Call after runRouteFromWaypoints when extraction had destinations as objects. */
+    function mergeExtractionIntoRouteSegments(extracted) {
+      if (!routeSegments || !routeSegments.waypoints || !extracted) return;
+      const waypoints = routeSegments.waypoints;
+      waypoints[0].label = extracted.start_label || null;
+      waypoints[0].stay_min = extracted.start_stay_min != null ? extracted.start_stay_min : 0;
+      const dests = extracted.destinations || [];
+      for (let i = 1; i < waypoints.length; i++) {
+        const d = dests[i - 1];
+        waypoints[i].label = (d && typeof d.label === "string") ? d.label : null;
+        waypoints[i].stay_min = (d && typeof d.stay_min === "number") ? d.stay_min : (d && d.stay_min != null ? parseInt(d.stay_min, 10) : 30);
+        if (waypoints[i].stay_min !== waypoints[i].stay_min) waypoints[i].stay_min = 30;
+      }
+    }
+
+    /** Populate Start and Destination inputs from extracted waypoints (for display/edit). destStrs can be string[] or {name,label?,stay_min?}[]. */
+    function populateWaypointInputs(startStr, destStrs) {
+      const startInput = document.getElementById("route-start");
+      const container = document.getElementById("destinations-container");
+      if (!startInput || !container) return;
+      startInput.value = startStr || "";
+      startInput.removeAttribute("data-geo-lat");
+      startInput.removeAttribute("data-geo-lon");
+      const destList = Array.isArray(destStrs) ? destStrs.map((d) => (typeof d === "object" && d && d.name != null) ? d.name : String(d)) : [];
+      let rows = container.querySelectorAll(".waypoint-row");
+      while (rows.length < destList.length) {
+        addDestinationRow();
+        rows = container.querySelectorAll(".waypoint-row");
+      }
+      rows.forEach((row, i) => {
+        const input = row.querySelector(".address-wrap input");
+        if (input) {
+          input.value = destList[i] || "";
+          input.removeAttribute("data-geo-lat");
+          input.removeAttribute("data-geo-lon");
+        }
+      });
+    }
+
+    function updateStep1Annotated(userText, highlights) {
+      const annotatedEl = document.getElementById("step1-annotated");
+      const legendEl = document.getElementById("step1-legend");
+      const emptyEl = document.getElementById("step1-empty");
+      if (!annotatedEl) return;
+      if (!userText) {
+        annotatedEl.innerHTML = "";
+        if (legendEl) legendEl.style.display = "none";
+        if (emptyEl) emptyEl.style.display = "block";
+        return;
+      }
+      annotatedEl.innerHTML = buildAnnotatedHtml(userText, highlights || []);
+      if (legendEl) legendEl.style.display = highlights && highlights.length ? "flex" : "none";
+      if (emptyEl) emptyEl.style.display = "none";
+      applySketchbookLines(annotatedEl);
+    }
+
+    /** Split Step 1 content into lines by fixed word count; wrap each line in a span with random tilt (3–7°) and random width. */
+    function applySketchbookLines(container) {
+      if (!container || !container.childNodes.length) return;
+      const WORDS_PER_LINE = 25;
+      const TILT_MIN = 1.5;
+      const TILT_MAX = 3.5;
+      const WIDTH_MIN_PCT = 92;
+      const WIDTH_MAX_PCT = 100;
+
+      function randomTiltDeg() {
+        const deg = TILT_MIN + Math.random() * (TILT_MAX - TILT_MIN);
+        return Math.random() > 0.5 ? deg : -deg;
+      }
+      function randomWidthPct() {
+        return Math.round(WIDTH_MIN_PCT + Math.random() * (WIDTH_MAX_PCT - WIDTH_MIN_PCT));
+      }
+      function getWords(text) {
+        return (text || "").trim().split(/\s+/).filter(Boolean);
+      }
+
+      const childNodes = Array.from(container.childNodes);
+      const lines = [];
+      let currentLine = [];
+      let currentWordCount = 0;
+
+      for (const node of childNodes) {
+        if (node.nodeType === Node.TEXT_NODE) {
+          const words = getWords(node.textContent);
+          let i = 0;
+          while (i < words.length) {
+            const spaceLeft = WORDS_PER_LINE - currentWordCount;
+            const take = Math.min(spaceLeft, words.length - i);
+            if (take <= 0) {
+              lines.push(currentLine);
+              currentLine = [];
+              currentWordCount = 0;
+              continue;
+            }
+            const chunk = words.slice(i, i + take);
+            currentLine.push({ type: "words", words: chunk });
+            currentWordCount += chunk.length;
+            i += take;
+            if (currentWordCount >= WORDS_PER_LINE) {
+              lines.push(currentLine);
+              currentLine = [];
+              currentWordCount = 0;
+            }
+          }
+        } else if (node.nodeType === Node.ELEMENT_NODE) {
+          const elWords = getWords(node.textContent);
+          const elWordCount = elWords.length;
+          if (currentWordCount + elWordCount > WORDS_PER_LINE && currentLine.length > 0) {
+            lines.push(currentLine);
+            currentLine = [];
+            currentWordCount = 0;
+          }
+          currentLine.push({ type: "node", node });
+          currentWordCount += elWordCount;
+          if (currentWordCount >= WORDS_PER_LINE) {
+            lines.push(currentLine);
+            currentLine = [];
+            currentWordCount = 0;
+          }
+        }
+      }
+      if (currentLine.length > 0) lines.push(currentLine);
+
+      container.innerHTML = "";
+      lines.forEach((segments) => {
+        const lineSpan = document.createElement("span");
+        lineSpan.className = "sketchbook-line";
+        lineSpan.style.transform = `rotate(${randomTiltDeg()}deg)`;
+        lineSpan.style.maxWidth = `${randomWidthPct()}%`;
+        lineSpan.style.display = "block";
+        segments.forEach((seg, idx) => {
+          if (seg.type === "words") {
+            if (idx > 0 && segments[idx - 1].type === "words") {
+              lineSpan.appendChild(document.createTextNode(" "));
+            }
+            lineSpan.appendChild(document.createTextNode(seg.words.join(" ")));
+          } else {
+            lineSpan.appendChild(seg.node);
+          }
+        });
+        container.appendChild(lineSpan);
+      });
+    }
+
+    function updateStep2FromRoute() {
+      updateStep2Timeline();
+    }
+
+    async function updateStep2Timeline() {
+      const timelineEl = document.getElementById("step2-timeline");
+      const emptyEl = document.getElementById("step2-empty");
+      if (!timelineEl) return;
+      const segs = typeof window.__routeSegments === "function" ? window.__routeSegments() : null;
+      const waypoints = segs?.waypoints || [];
+      const legs = segs?.legs || [];
+      if (!waypoints.length || !legs.length) {
+        timelineEl.innerHTML = "";
+        timelineEl.style.display = "none";
+        if (emptyEl) emptyEl.style.display = "block";
+        const wrap = document.getElementById("step2-segment-details");
+        if (wrap) wrap.style.display = "none";
+        updateStreetViewStrip({ waypoints: [], legs: [] });
+        return;
+      }
+      timelineEl.innerHTML = "";
+      timelineEl.style.display = "block";
+      if (emptyEl) emptyEl.style.display = "none";
+      const totalTravelMin = legs.reduce((sum, leg) => sum + (leg.duration_sec || 0) / 60, 0);
+      const totalStayMin = waypoints.reduce((sum, wp) => sum + (wp.stay_min != null ? wp.stay_min : (wp === waypoints[0] ? 0 : 30)), 0);
+      const totalMin = totalTravelMin + totalStayMin;
+      const pct = (part, total) => (total > 0 ? ((part / total) * 100).toFixed(1) : "0");
+      function formatStay(min) {
+        const m = Number(min);
+        if (!Number.isFinite(m) || m < 0) return "0 min";
+        if (m >= 60) return Math.floor(m / 60) + "h " + (m % 60) + " min";
+        return m + " min";
+      }
+      const parts = [];
+      for (let i = 0; i < waypoints.length; i++) {
+        const wp = waypoints[i];
+        const stayMin = wp.stay_min != null ? wp.stay_min : (i === 0 ? 0 : 30);
+        const label = wp.label || (i === 0 ? "Start" : "Location " + (i + 1));
+        const legForWeather = legs[Math.min(i, legs.length - 1)];
+        const w = legForWeather?.weather;
+        const weatherStr = w ? (w.temp != null ? w.temp.toFixed(1) : "—") + "°C, " + (w.wind_speed != null ? w.wind_speed.toFixed(1) : "—") + " m/s wind, " + (w.humidity != null ? w.humidity : "—") + "% hum" : "—";
+        const stayPct = totalMin > 0 ? pct(stayMin, totalMin) : "0";
+        parts.push('<div class="timeline-block timeline-location">');
+        parts.push('<div class="timeline-title">Location ' + (i + 1) + ': ' + escapeHtml(label) + ': ' + escapeHtml(wp.name || "") + '</div>');
+        parts.push('<div class="timeline-meta">(' + formatStay(stayMin) + ', ' + stayPct + '% of time)</div>');
+        parts.push('<div class="timeline-weather">Weather: ' + weatherStr + '</div>');
+        parts.push('<div class="timeline-meta">Context: Indoor;</div>');
+        parts.push('</div>');
+        if (i < legs.length) {
+          const leg = legs[i];
+          const fromWp = waypoints[leg.fromIndex];
+          const toWp = waypoints[leg.toIndex];
+          const fromLabel = fromWp?.label ? escapeHtml(fromWp.label) + ": " : "";
+          const toLabel = toWp?.label ? escapeHtml(toWp.label) + ": " : "";
+          const legMin = (leg.duration_sec || 0) / 60;
+          const legPct = totalMin > 0 ? pct(legMin, totalMin) : "0";
+          const distKm = leg.distance_m != null ? (leg.distance_m / 1000).toFixed(2) : "—";
+          const lw = leg.weather;
+          const legWeatherStr = lw ? (lw.temp != null ? lw.temp.toFixed(1) : "—") + "°C, " + (lw.wind_speed != null ? lw.wind_speed.toFixed(1) : "—") + " m/s wind, " + (lw.humidity != null ? lw.humidity : "—") + "% hum" : "—";
+          parts.push('<div class="timeline-block timeline-leg">');
+          parts.push('<div class="timeline-title">Leg ' + (i + 1) + ': ' + fromLabel + escapeHtml(fromWp?.name || "") + ' → ' + toLabel + escapeHtml(toWp?.name || "") + '</div>');
+          parts.push('<div class="timeline-meta">(' + Math.round(legMin) + ' min, ' + distKm + ' km, ' + legPct + '% of time)</div>');
+          parts.push('<div class="timeline-weather">Weather: ' + legWeatherStr + '</div>');
+          parts.push('<div class="timeline-meta">Context: ' + (leg.indoor_outdoor === "indoor" ? "Indoor" : "Outdoor") + ';</div>');
+          parts.push('</div>');
+        }
+      }
+      timelineEl.innerHTML = parts.join("");
+      timelineEl.style.display = "block";
+      const wrap = document.getElementById("step2-segment-details");
+      if (wrap) wrap.style.display = "none";
+      updateStreetViewStrip(segs);
+      updateSegmentsList(waypoints, legs);
+    }
+
+    function updateStep2SegmentTable() {
+      updateStep2Timeline();
+    }
+
+    async function calculateRoute() {
+      const startInput = document.getElementById("route-start");
+      const statusEl = document.getElementById("route-status");
+      const listEl = document.getElementById("route-segments-list");
+      const ulEl = document.getElementById("route-segments-ul");
+      const btn = document.getElementById("calculate-route-btn");
+      const profileSelect = document.getElementById("route-profile");
+      if (!startInput || !statusEl || !btn) return;
+      const startQ = (startInput.value || "").trim();
+      const destInputs = getDestInputsInOrder();
+      const destQs = destInputs.map((i) => (i.value || "").trim()).filter(Boolean);
+      if (!startQ || destQs.length === 0) {
+        statusEl.textContent = "Enter a start and at least one destination.";
+        return;
+      }
+      const profile = (profileSelect && profileSelect.value) || "walking";
+      const osrmProfile = { walking: "foot", cycling: "bike", driving: "driving" }[profile] || "foot";
+      btn.disabled = true;
+      statusEl.textContent = "Resolving addresses…";
+      const allInputs = [startInput, ...destInputs];
+      const coords = [];
+      const names = [];
+      for (let i = 0; i < allInputs.length; i++) {
+        const input = allInputs[i];
+        const q = (input.value || "").trim();
+        if (!q) continue;
+        const lat = input.dataset.geoLat != null ? parseFloat(input.dataset.geoLat) : NaN;
+        const lon = input.dataset.geoLon != null ? parseFloat(input.dataset.geoLon) : NaN;
+        if (!Number.isNaN(lat) && !Number.isNaN(lon)) {
+          coords.push([lon, lat]);
+          names.push(q);
+          continue;
+        }
+        statusEl.textContent = `Geocoding ${i + 1}/${allInputs.length}…`;
+        const result = await geocode(q);
+        if (!result) {
+          statusEl.textContent = `Could not find: "${q}"`;
+          btn.disabled = false;
+          return;
+        }
+        coords.push([result.lon, result.lat]);
+        names.push(result.name);
+      }
+      statusEl.textContent = "Routing…";
+      const coordStr = coords.map((c) => c.join(",")).join(";");
+      const osrmUrl = `${OSRM_BASE}/${osrmProfile}/${coordStr}?overview=full&geometries=geojson`;
+      let res;
+      try {
+        res = await fetch(osrmUrl);
+      } catch (e) {
+        statusEl.textContent = "Route request failed.";
+        btn.disabled = false;
+        return;
+      }
+      if (!res.ok) {
+        statusEl.textContent = "No route found between these points.";
+        btn.disabled = false;
+        return;
+      }
+      const data = await res.json();
+      const route = data.routes && data.routes[0];
+      if (!route || !route.geometry || !route.legs || route.legs.length === 0) {
+        statusEl.textContent = "No route geometry returned.";
+        btn.disabled = false;
+        return;
+      }
+      const fullGeometry = route.geometry.coordinates || [];
+      const waypoints = names.map((name, i) => ({
+        name,
+        lat: coords[i][1],
+        lon: coords[i][0]
+      }));
+      const speedMs = PROFILE_SPEED_MS[osrmProfile] || PROFILE_SPEED_MS.foot;
+      const legs = route.legs.map((leg, i) => {
+        const pts = [];
+        if (leg.steps && leg.steps.length) {
+          leg.steps.forEach((step) => {
+            const g = step.geometry && step.geometry.coordinates;
+            if (g) g.forEach((c) => pts.push(c));
+          });
+        }
+        const distance_m = leg.distance || 0;
+        const duration_sec = speedMs > 0 ? Math.round(distance_m / speedMs) : (leg.duration || 0);
+        return {
+          fromIndex: i,
+          toIndex: i + 1,
+          duration_sec,
+          distance_m,
+          geometry: pts.length ? pts : fullGeometry
+        };
+      });
+      const totalDurationSec = legs.reduce((sum, leg) => sum + leg.duration_sec, 0);
+      legs.forEach((leg) => {
+        leg.time_weight = totalDurationSec > 0 ? leg.duration_sec / totalDurationSec : 0;
+        leg.indoor_outdoor = "outdoor";
+      });
+      routeSegments = { waypoints, legs, fullGeometry };
+      initMap();
+      if (routeLayer) routeLayer.clearLayers();
+      const latLngs = fullGeometry.map((c) => [c[1], c[0]]);
+      const drawnLine = jitterRouteLine(smoothRouteLine(downsampleRouteLine(latLngs, 2)));
+      L.polyline(drawnLine, { color: "#ffffff", weight: 2 }).addTo(routeLayer);
+      waypoints.forEach((wp, i) => {
+        const label = wp.name || (i === 0 ? "Start" : `Destination ${i}`);
+        L.marker([wp.lat, wp.lon], { icon: createMinimalMarkerIcon() })
+          .bindTooltip(label, { permanent: false })
+          .addTo(routeLayer);
+      });
+      if (map && latLngs.length) map.fitBounds(latLngs, { padding: [20, 20] });
+      updateSegmentsList(waypoints, legs);
+      updateStep2FromRoute();
+      updateStep2SegmentTable();
+      listEl.style.display = "block";
+      statusEl.textContent = `Route: ${(route.distance / 1000).toFixed(1)} km, ${Math.round(totalDurationSec / 60)} min (${profile}). Fetching weather…`;
+      for (let i = 0; i < legs.length; i++) {
+        const leg = legs[i];
+        const fromWp = waypoints[leg.fromIndex];
+        const toWp = waypoints[leg.toIndex];
+        const midLat = (fromWp.lat + toWp.lat) / 2;
+        const midLon = (fromWp.lon + toWp.lon) / 2;
+        leg.weather = await fetchWeather(midLat, midLon);
+        if (i < legs.length - 1) await new Promise((r) => setTimeout(r, 200));
+      }
+      updateSegmentsList(waypoints, legs);
+      updateStep2SegmentTable();
+      statusEl.textContent = `Route: ${(route.distance / 1000).toFixed(1)} km, ${Math.round(totalDurationSec / 60)} min (${profile}).`;
+      btn.disabled = false;
+    }
+
+    function updateSegmentsList(waypoints, legs) {
+      const ul = document.getElementById("route-segments-ul");
+      if (!ul) return;
+      ul.innerHTML = "";
+      legs.forEach((leg, i) => {
+        const fromName = waypoints[leg.fromIndex]?.name || `Waypoint ${leg.fromIndex}`;
+        const toName = waypoints[leg.toIndex]?.name || `Waypoint ${leg.toIndex}`;
+        const min = Math.round(leg.duration_sec / 60);
+        const km = (leg.distance_m / 1000).toFixed(2);
+        const weightPct = leg.time_weight != null ? (leg.time_weight * 100).toFixed(0) : "";
+        const w = leg.weather;
+        const weatherStr = w ? `${w.temp}°C, ${w.wind_speed.toFixed(1)} m/s wind, ${w.humidity}% hum` : "—";
+        const li = document.createElement("li");
+        li.className = "segment-item";
+        li.innerHTML = "";
+        const line1 = document.createElement("div");
+        line1.className = "segment-title";
+        line1.textContent = `Leg ${i + 1}: ${fromName} → ${toName} (${min} min, ${km} km${weightPct ? `, ${weightPct}% of time` : ""})`;
+        li.appendChild(line1);
+        const line2 = document.createElement("div");
+        line2.className = "segment-weather";
+        line2.textContent = `Weather: ${weatherStr}`;
+        li.appendChild(line2);
+        const row = document.createElement("div");
+        row.className = "segment-context-row";
+        const label = document.createElement("label");
+        label.textContent = "Context: ";
+        label.style.marginRight = "4px";
+        const select = document.createElement("select");
+        select.className = "segment-indoor-outdoor";
+        select.dataset.legIndex = String(i);
+        ["outdoor", "indoor", "transit"].forEach((val) => {
+          const opt = document.createElement("option");
+          opt.value = val;
+          opt.textContent = val.charAt(0).toUpperCase() + val.slice(1);
+          if ((leg.indoor_outdoor || "outdoor") === val) opt.selected = true;
+          select.appendChild(opt);
+        });
+        select.addEventListener("change", () => {
+          const idx = parseInt(select.dataset.legIndex, 10);
+          if (!Number.isNaN(idx) && routeSegments.legs[idx]) routeSegments.legs[idx].indoor_outdoor = select.value;
+        });
+        row.appendChild(label);
+        row.appendChild(select);
+        li.appendChild(row);
+        ul.appendChild(li);
+      });
+    }
+
+    function setupAddressAutocomplete(inputEl, dropdownEl) {
+      if (!inputEl || !dropdownEl) return;
+      let debounceTimer = null;
+      let lastQuery = "";
+
+      function closeAllDropdowns() {
+        document.querySelectorAll(".address-dropdown.is-open").forEach((d) => d.classList.remove("is-open"));
+      }
+
+      function showResults(results) {
+        dropdownEl.innerHTML = "";
+        if (!results.length) {
+          dropdownEl.classList.remove("is-open");
+          return;
+        }
+        results.forEach((item) => {
+          const div = document.createElement("div");
+          div.className = "address-dropdown-item";
+          div.textContent = item.name;
+          div.addEventListener("click", () => {
+            inputEl.value = item.name;
+            inputEl.dataset.geoLat = String(item.lat);
+            inputEl.dataset.geoLon = String(item.lon);
+            dropdownEl.classList.remove("is-open");
+            inputEl.blur();
+          });
+          dropdownEl.appendChild(div);
+        });
+        closeAllDropdowns();
+        dropdownEl.classList.add("is-open");
+      }
+
+      inputEl.addEventListener("input", () => {
+        clearTimeout(debounceTimer);
+        const q = (inputEl.value || "").trim();
+        if (q.length < 2) {
+          dropdownEl.classList.remove("is-open");
+          return;
+        }
+        debounceTimer = setTimeout(async () => {
+          lastQuery = q;
+          const results = await searchNominatim(q);
+          if ((inputEl.value || "").trim() === lastQuery) showResults(results);
+        }, 400);
+      });
+
+      inputEl.addEventListener("focus", () => {
+        if (dropdownEl.children.length) dropdownEl.classList.add("is-open");
+      });
+
+      inputEl.addEventListener("blur", () => {
+        setTimeout(() => dropdownEl.classList.remove("is-open"), 150);
+      });
+    }
+
+    function addDestinationRow() {
+      const container = document.getElementById("destinations-container");
+      if (!container) return;
+      const rows = container.querySelectorAll(".waypoint-row");
+      const nextIndex = rows.length;
+      const label = document.createElement("label");
+      label.textContent = `Destination ${nextIndex + 1}`;
+      const row = document.createElement("div");
+      row.className = "waypoint-row";
+      const wrap = document.createElement("div");
+      wrap.className = "address-wrap";
+      const input = document.createElement("input");
+      input.type = "text";
+      input.setAttribute("data-dest-index", String(nextIndex));
+      input.placeholder = "e.g. address or place name";
+      input.setAttribute("autocomplete", "off");
+      const dropdown = document.createElement("div");
+      dropdown.className = "address-dropdown";
+      wrap.appendChild(input);
+      wrap.appendChild(dropdown);
+      const removeBtn = document.createElement("button");
+      removeBtn.type = "button";
+      removeBtn.className = "remove-wp";
+      removeBtn.setAttribute("data-dest-index", String(nextIndex));
+      removeBtn.setAttribute("aria-label", "Remove");
+      removeBtn.textContent = "×";
+      removeBtn.addEventListener("click", () => {
+        row.remove();
+        label.remove();
+      });
+      row.appendChild(wrap);
+      row.appendChild(removeBtn);
+      container.appendChild(label);
+      container.appendChild(row);
+      setupAddressAutocomplete(input, dropdown);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      initMap();
+      const startInput = document.getElementById("route-start");
+      const startDropdown = document.getElementById("route-start-dropdown");
+      if (startInput && startDropdown) setupAddressAutocomplete(startInput, startDropdown);
+      getDestInputsInOrder().forEach((input) => {
+        const dropdown = input.closest(".address-wrap")?.querySelector(".address-dropdown");
+        if (dropdown) setupAddressAutocomplete(input, dropdown);
+      });
+      document.getElementById("add-dest-btn")?.addEventListener("click", addDestinationRow);
+      document.getElementById("calculate-route-btn")?.addEventListener("click", () => calculateRoute());
+      document.getElementById("destinations-container")?.addEventListener("click", (e) => {
+        const btn = e.target?.closest(".remove-wp");
+        if (!btn) return;
+        const row = btn.closest(".waypoint-row");
+        const label = row?.previousElementSibling;
+        if (row) row.remove();
+        if (label && label.tagName === "LABEL") label.remove();
+      });
+    });
+
+    // Expose for later steps (weather per segment, metrics aggregation)
+    window.__routeSegments = () => routeSegments;
+
+    // —— Spec formulas: fixed bounds + aggregation + compute (SPEC-FORMULAS.md) ——
+    const SPEC = {
+      Tmin: -10,
+      Tmax: 40,
+      max_wind: 20,
+      max_humidity: 100,
+      max_exposure_hours: 8
+    };
+
+    /** Time-weighted aggregate env from route segments (legs + stay-at-location). Uses waypoints[].stay_min when present. */
+    function aggregateRouteEnv(segments) {
+      const legs = segments?.legs || [];
+      const waypoints = segments?.waypoints || [];
+      if (!legs.length) return null;
+      const combined = [];
+      for (let i = 0; i < waypoints.length; i++) {
+        const stayMin = waypoints[i].stay_min != null ? waypoints[i].stay_min : (i === 0 ? 0 : 30);
+        if (stayMin > 0) {
+          const legForWeather = legs[Math.min(i, legs.length - 1)];
+          combined.push({
+            duration_sec: stayMin * 60,
+            weather: legForWeather?.weather || null,
+            indoor_outdoor: "indoor"
+          });
+        }
+      }
+      legs.forEach((leg) => {
+        combined.push({
+          duration_sec: leg.duration_sec ?? 0,
+          weather: leg.weather || null,
+          indoor_outdoor: leg.indoor_outdoor || "outdoor"
+        });
+      });
+      const totalDuration = combined.reduce((sum, s) => sum + (s.duration_sec || 0), 0);
+      if (totalDuration <= 0) return null;
+      combined.forEach((s) => {
+        s.time_weight = (s.duration_sec || 0) / totalDuration;
+      });
+      let tempSum = 0, windSum = 0, humiditySum = 0, totalWeight = 0;
+      let outdoorSeconds = 0;
+      for (const seg of combined) {
+        const w = seg.time_weight ?? 0;
+        if (seg.indoor_outdoor === "outdoor") outdoorSeconds += seg.duration_sec ?? 0;
+        const weather = seg.weather;
+        if (weather) {
+          tempSum += (weather.temp ?? 15) * w;
+          windSum += (weather.wind_speed ?? 0) * w;
+          humiditySum += (weather.humidity ?? 50) * w;
+          totalWeight += w;
+        }
+      }
+      if (totalWeight <= 0) return null;
+      return {
+        temp_avg: tempSum / totalWeight,
+        wind_avg: windSum / totalWeight,
+        humidity_avg: humiditySum / totalWeight,
+        outdoor_seconds: outdoorSeconds,
+        total_duration_sec: totalDuration,
+        outdoor_fraction: totalDuration > 0 ? outdoorSeconds / totalDuration : 0
+      };
+    }
+
+    /** Compute all 8 spec metrics (Fit, Mesh, Thickness, Airflow, Support, Comfort, DressLength, DressSize) from env + norms. Clamps to [0,1]. */
+    function computeSpecMetricsFromEnv(agg, norms) {
+      const n = (x) => (typeof x === "number" && !Number.isNaN(x) ? Math.max(0, Math.min(1, x)) : 0.5);
+      const Tmin = SPEC.Tmin, Tmax = SPEC.Tmax, maxW = SPEC.max_wind, maxH = SPEC.max_humidity, maxE = SPEC.max_exposure_hours * 3600;
+      const tempNormCold = (Tmax - agg.temp_avg) / (Tmax - Tmin);
+      const tempNormHot = (agg.temp_avg - Tmin) / (Tmax - Tmin);
+      const windNorm = Math.min(1, agg.wind_avg / maxW);
+      const humidityNorm = Math.min(1, agg.humidity_avg / maxH);
+      const exposureNorm = Math.min(1, agg.outdoor_seconds / maxE);
+      const spatialNorm = agg.outdoor_fraction;
+      const outdoorNorm = agg.outdoor_fraction;
+
+      const act = n(norms.activity_norm);
+      const form = n(norms.formality_norm);
+      const aest = n(norms.aesthetic_norm);
+      const comfortPref = n(norms.comfort_pref_norm);
+      const contain = n(norms.containment_norm);
+      const demand = n(norms.demand_norm);
+      const stability = n(norms.stability_norm);
+
+      const Fit = n(1 - (0.30 * tempNormCold - 0.25 * act + 0.15 * (1 - comfortPref) + 0.20 * contain + 0.10 * spatialNorm));
+      const Mesh = n(0.35 * tempNormCold + 0.25 * (1 - act) + 0.20 * form + 0.20 * aest);
+      const Thickness = n(0.50 * tempNormCold + 0.25 * windNorm + 0.25 * exposureNorm);
+      const Airflow = n(1 - (0.35 * tempNormHot + 0.25 * humidityNorm + 0.25 * act - 0.15 * outdoorNorm));
+      const Support = n(0.35 * demand + 0.25 * stability + 0.25 * form + 0.15 * windNorm);
+      const Comfort = n(0.30 * form + 0.25 * aest + 0.25 * comfortPref + 0.20 * (1 - act));
+      const DressLength = n(0.40 * form + 0.35 * tempNormCold + 0.25 * aest);
+      const DressSize = n(0.35 * form + 0.30 * (1 - act) + 0.20 * aest + 0.15 * (1 - demand));
+
+      const r2 = (v) => (typeof v === "number" ? v.toFixed(2) : String(v));
+      const breakdown = {
+        env: { temp_avg: r2(agg.temp_avg), wind_avg: r2(agg.wind_avg), humidity_avg: r2(agg.humidity_avg), outdoor_fraction: r2(agg.outdoor_fraction), outdoor_seconds: Math.round(agg.outdoor_seconds) },
+        norms: { activity_norm: r2(act), formality_norm: r2(form), aesthetic_norm: r2(aest), comfort_pref_norm: r2(comfortPref), containment_norm: r2(contain), demand_norm: r2(demand), stability_norm: r2(stability) },
+        Fit: { formulaWithNumbers: `1 − (0.30×temp_norm_cold: ${r2(tempNormCold)} − 0.25×activity_norm: ${r2(act)} + 0.15×(1−comfort_pref_norm: ${r2(comfortPref)}) + 0.20×containment_norm: ${r2(contain)} + 0.10×spatial_norm: ${r2(spatialNorm)})`, value: r2(Fit), inputs: { temp_norm_cold: r2(tempNormCold), activity_norm: r2(act), comfort_pref_norm: r2(comfortPref), containment_norm: r2(contain), spatial_norm: r2(spatialNorm) } },
+        Mesh: { formulaWithNumbers: `0.35×temp_norm_cold: ${r2(tempNormCold)} + 0.25×(1−activity_norm: ${r2(act)}) + 0.20×formality_norm: ${r2(form)} + 0.20×aesthetic_norm: ${r2(aest)}`, value: r2(Mesh), inputs: { temp_norm_cold: r2(tempNormCold), activity_norm: r2(act), formality_norm: r2(form), aesthetic_norm: r2(aest) } },
+        Thickness: { formulaWithNumbers: `0.50×temp_norm_cold: ${r2(tempNormCold)} + 0.25×wind_norm: ${r2(windNorm)} + 0.25×exposure_norm: ${r2(exposureNorm)}`, value: r2(Thickness), inputs: { temp_norm_cold: r2(tempNormCold), wind_norm: r2(windNorm), exposure_norm: r2(exposureNorm) } },
+        Airflow: { formulaWithNumbers: `1 − (0.35×temp_norm_hot: ${r2(tempNormHot)} + 0.25×humidity_norm: ${r2(humidityNorm)} + 0.25×activity_norm: ${r2(act)} − 0.15×outdoor_norm: ${r2(outdoorNorm)})`, value: r2(Airflow), inputs: { temp_norm_hot: r2(tempNormHot), humidity_norm: r2(humidityNorm), activity_norm: r2(act), outdoor_norm: r2(outdoorNorm) } },
+        Support: { formulaWithNumbers: `0.35×demand_norm: ${r2(demand)} + 0.25×stability_norm: ${r2(stability)} + 0.25×formality_norm: ${r2(form)} + 0.15×wind_norm: ${r2(windNorm)}`, value: r2(Support), inputs: { demand_norm: r2(demand), stability_norm: r2(stability), formality_norm: r2(form), wind_norm: r2(windNorm) } },
+        Comfort: { formulaWithNumbers: `0.30×formality_norm: ${r2(form)} + 0.25×aesthetic_norm: ${r2(aest)} + 0.25×comfort_pref_norm: ${r2(comfortPref)} + 0.20×(1−activity_norm: ${r2(act)})`, value: r2(Comfort), inputs: { formality_norm: r2(form), aesthetic_norm: r2(aest), comfort_pref_norm: r2(comfortPref), activity_norm: r2(act) } },
+        DressLength: { formulaWithNumbers: `0.40×formality_norm: ${r2(form)} + 0.35×temp_norm_cold: ${r2(tempNormCold)} + 0.25×aesthetic_norm: ${r2(aest)}`, value: r2(DressLength), inputs: { formality_norm: r2(form), temp_norm_cold: r2(tempNormCold), aesthetic_norm: r2(aest) } },
+        DressSize: { formulaWithNumbers: `0.35×formality_norm: ${r2(form)} + 0.30×(1−activity_norm: ${r2(act)}) + 0.20×aesthetic_norm: ${r2(aest)} + 0.15×(1−demand_norm: ${r2(demand)})`, value: r2(DressSize), inputs: { formality_norm: r2(form), activity_norm: r2(act), aesthetic_norm: r2(aest), demand_norm: r2(demand) } }
+      };
+      return { Fit, Mesh, Thickness, Airflow, Support, Comfort, DressLength, DressSize, breakdown };
+    }
+
+    let OPENAI_API_KEY = "";
+    let apiKeyLoaded = false;
+    let apiKeyPromise = null;
+    function ensureApiKey() {
+      if (apiKeyLoaded) return Promise.resolve(OPENAI_API_KEY);
+      if (apiKeyPromise) return apiKeyPromise;
+      const path = window.location.pathname;
+      let dir = path.includes("/showcase") ? path.replace(/\/[^/]*$/, "") : "/showcase";
+      if (!dir || dir === "/") dir = "/showcase";
+      const apiKeyUrl = window.location.origin + dir + "/api-key.json";
+      apiKeyPromise = fetch(apiKeyUrl, { cache: "no-store" })
+        .then((r) => { if (!r.ok) throw new Error("not found"); return r.json(); })
+        .then((o) => {
+          OPENAI_API_KEY = (o.OPENAI_API_KEY || "").trim();
+          if (typeof window !== "undefined") {
+            window.GOOGLE_MAPS_API_KEY = (o.GOOGLE_MAPS_API_KEY || "").trim();
+            window.MAPILLARY_ACCESS_TOKEN = (o.MAPILLARY_ACCESS_TOKEN || "").trim();
+          }
+          apiKeyLoaded = true;
+          return OPENAI_API_KEY;
+        })
+        .catch((err) => { console.error("api-key.json load failed:", err); apiKeyLoaded = true; return ""; });
+      return apiKeyPromise;
+    }
+
+    function describeMetricNote(key, v) {
+      const clamp = Math.max(0, Math.min(1, v));
+      const bucket = clamp <= 0.2 ? 0 : clamp <= 0.4 ? 1 : clamp <= 0.6 ? 2 : clamp <= 0.8 ? 3 : 4;
+      switch (key) {
+        case "Fit": {
+          const notes = [
+            "fit: very close, almost second-skin",
+            "fit: close and tailored",
+            "fit: balanced ease through the body",
+            "fit: relaxed with visible ease",
+            "fit: very loose, drifting away from the body"
+          ];
+          return notes[bucket];
+        }
+        case "Mesh": {
+          const notes = [
+            "mesh: big open structure, lots of air",
+            "mesh: open weave with visible gaps",
+            "mesh: mid-density grid",
+            "mesh: fine mesh, nearly solid",
+            "mesh: very fine, reads almost as solid cloth"
+          ];
+          return notes[bucket];
+        }
+        case "Thickness": {
+          const notes = [
+            "thickness: ultra-thin, papery layer",
+            "thickness: light, summer-weight cloth",
+            "thickness: mid-weight, everyday fabric",
+            "thickness: substantial, structured layer",
+            "thickness: heavy, almost coat-like"
+          ];
+          return notes[bucket];
+        }
+        case "Airflow": {
+          const notes = [
+            "airflow: very breathable, air moves freely",
+            "airflow: breathable with gentle resistance",
+            "airflow: balanced, neither drafty nor sealed",
+            "airflow: insulating, holds warmth in",
+            "airflow: sealed, almost no air movement"
+          ];
+          return notes[bucket];
+        }
+        case "Support": {
+          const notes = [
+            "support: soft and drapey, follows the body",
+            "support: gentle structure, still fluid",
+            "support: balanced between drape and structure",
+            "support: firm, holds shape off the body",
+            "support: rigid, architectural silhouette"
+          ];
+          return notes[bucket];
+        }
+        case "Comfort": {
+          const notes = [
+            "comfort / aesthetic: utilitarian, almost technical",
+            "comfort / aesthetic: functional with small touches",
+            "comfort / aesthetic: balanced utility and pleasure",
+            "comfort / aesthetic: soft, comforting presence",
+            "comfort / aesthetic: indulgent, almost ceremonial"
+          ];
+          return notes[bucket];
+        }
+        case "DressLength": {
+          const notes = [
+            "length: very short, above mid-thigh",
+            "length: short, mid-thigh to above knee",
+            "length: mid-length, around the knee",
+            "length: long, mid-calf range",
+            "length: very long, almost to the floor"
+          ];
+          return notes[bucket];
+        }
+        case "DressSize": {
+          const notes = [
+            "hem: very narrow, almost column-like",
+            "hem: narrow with slight flare",
+            "hem: moderate sweep around the legs",
+            "hem: wide, generous sweep",
+            "hem: very wide, dramatic halo around the feet"
+          ];
+          return notes[bucket];
+        }
+        default:
+          return `value: ${clamp.toFixed(2)}`;
+      }
+    }
+
+    function setMetricsDisplay(values) {
+      ["Fit","Mesh","Thickness","Airflow","Support","Comfort","DressLength","DressSize"].forEach((key) => {
+        const vRaw = values && typeof values[key] === "number" ? values[key] : 0;
+        const v = Math.max(0, Math.min(1, vRaw));
+        const els = metricEls[key];
+        if (!els) return;
+        els.val.textContent = describeMetricNote(key, v);
+      });
+    }
+
+    function updateCalculationProcessDisplay() {
+      const el = document.getElementById("calculation-process");
+      const emptyEl = document.getElementById("step3-empty");
+      if (!el) return;
+      if (!lastMetricBreakdown) {
+        el.innerHTML = "";
+        if (emptyEl) emptyEl.style.display = "block";
+        return;
+      }
+      if (emptyEl) emptyEl.style.display = "none";
+      const r2 = (v) => (typeof v === "number" ? v.toFixed(2) : String(v));
+      const esc = (s) => {
+        const d = document.createElement("div");
+        d.textContent = s;
+        return d.innerHTML;
+      };
+      const parts = [];
+
+      if (lastMetricBreakdown.fromRoute && lastMetricBreakdown.formulaBased) {
+        const fb = lastMetricBreakdown.formulaBased;
+        const metricOrder = ["Fit", "Mesh", "Thickness", "Airflow", "Support", "Comfort", "DressLength", "DressSize"];
+        metricOrder.forEach((key) => {
+          const b = fb[key];
+          if (!b) return;
+          parts.push(`<div class="calc-formula-block">`);
+          parts.push(`<div class="calc-formula-name">${esc(key)}</div>`);
+          parts.push(`<div class="calc-formula-line">${esc(b.formulaWithNumbers || "")}</div>`);
+          parts.push(`<div class="calc-formula-equals">=</div>`);
+          parts.push(`<div class="calc-formula-result">${esc(b.value)}</div>`);
+          parts.push("</div>");
+        });
+      } else {
+        parts.push("<p class=\"calc-all-llm-intro\">No route data; all 8 metrics from text (LLM).</p>");
+        if (lastMetrics) {
+          const arrow = "<span class=\"calc-flow-arrow\" aria-hidden=\"true\">→</span>";
+          ["Fit", "Mesh", "Thickness", "Airflow", "Support", "Comfort", "DressLength", "DressSize"].forEach((key) => {
+            const v = r2(lastMetrics[key]);
+            parts.push("<div class=\"calc-flow-row\">");
+            parts.push(`<span class="calc-flow-label">${esc(key)}</span>`);
+            parts.push("<span class=\"calc-flow-llm-source\">Your text</span>");
+            parts.push(arrow);
+            parts.push("<span class=\"calc-flow-llm-source\">LLM</span>");
+            parts.push(arrow);
+            parts.push(`<span class="calc-flow-result">${esc(v)}</span>`);
+            parts.push("</div>");
+          });
+        }
+      }
+      el.innerHTML = parts.join("");
+    }
+
+    async function analyzeTextToMetrics(text) {
+      const key = await ensureApiKey();
+      if (!key || key === "PASTE_YOUR_OPENAI_API_KEY_HERE") {
+        alert("Add your API key: copy api-key.example.json to api-key.json in this folder and replace the placeholder with your OpenAI key.");
+        return null;
+      }
+      const segments = typeof window.__routeSegments === "function" ? window.__routeSegments() : null;
+      const agg = aggregateRouteEnv(segments);
+      const useRouteFormulas = agg && segments?.legs?.length > 0;
+
+      const systemPrompt = useRouteFormulas
+        ? `You are a garment behavior interpreter. We have real route/weather data for this request.
+
+Your job: read the user's situation and return (1) the 8 garment metrics (Fit, Mesh, Thickness, Airflow, Support, Comfort, DressLength, DressSize) as 0–1 values, AND (2) these intermediate norms (0–1 each) so we can compute Fit, Mesh, Thickness, Airflow, Support from the spec formulas using route weather:
+activity_norm (activity intensity: low→0, high→1), formality_norm (casual→0, formal→1), aesthetic_norm (airy→0, sleek→1), comfort_pref_norm (tight→0, loose→1), containment_norm (low need→0, high need→1), demand_norm (rest→0, active/standing→1), stability_norm (calm→0, needs support→1).
+
+Return a single JSON object with all of: Fit, Mesh, Thickness, Airflow, Support, Comfort, DressLength, DressSize, activity_norm, formality_norm, aesthetic_norm, comfort_pref_norm, containment_norm, demand_norm, stability_norm. We will overwrite Fit,Mesh,Thickness,Airflow,Support using route weather + your norms; use your Comfort, DressLength, DressSize as-is. Infer from minimal cues; use 0.5 only when no cue. Output only the JSON.`
+        : `You are a garment behavior interpreter. 
+
+Your job is to read a short paragraph describing someone's situation and convert it into 8 normalized values between 0 and 1.
+
+Important: Infer from even minimal cues. Use the whole range 0–1; avoid returning 0.5 for every field. Only use 0.5 for a dimension when the text gives no relevant cue at all. One or two words (e.g. "cozy", "quick errands", "cold morning") are enough to shift several values.
+
+Return only a JSON object like:
+
+{
+  "Fit": float,
+  "Mesh": float,
+  "Thickness": float,
+  "Airflow": float,
+  "Support": float,
+  "Comfort": float,
+  "DressLength": float,
+  "DressSize": float
+}
+
+Use these orientations and meanings:
+
+- Fit: 0 = close/tight, 1 = loose/relaxed
+  Influenced by temperature (colder → closer), activity (higher → looser), containment need (higher → closer).
+
+- Mesh: 0 = open/coarse, 1 = fine/tight
+  Colder → finer, formal → finer, active → coarser, sleek aesthetics → finer.
+
+- Thickness: 0 = thin, 1 = thick
+  Driven by cold temperature, wind speed, and time outdoors.
+
+- Airflow: 0 = most breathable, 1 = least breathable
+  Hotter/humid/active → more breathable (lower); cold/outdoor → less breathable (higher).
+
+- Support: 0 = soft/flexible, 1 = rigid/structured
+  Driven by physical demand, need for grounding, formality, and environmental instability.
+
+- Comfort: 0 = utilitarian / minimal comfort focus, 1 = indulgent / strong comfort or aesthetic preference
+  Influenced by self-care intent, occasion (casual vs special), desire for softness or sensory pleasure, and aesthetic preference (plain vs expressive). Higher for "I want to feel cozy" or "I want to look/feel good"; lower for purely functional descriptions.
+
+- DressLength: 0 = short (mini, above knee), 1 = long (midi, maxi, floor length)
+  Infer from occasion, formality, weather, or explicit mention of length. Use 0.5 only when there is no cue.
+
+- DressSize: 0 = narrow/slim hem (fitted, pencil, sheath, bodycon), 1 = wide/voluminous hem (A-line, circle skirt, full skirt, ball gown)
+  Infer from occasion (formal/ball → wider), activity (very active/mobile → narrower; relaxed → can be wider), comfort (easy movement often suggests some width), and aesthetic (sleek/minimal → narrower, dramatic/romantic → wider). Use 0.5 only when there is no cue.
+
+Example: For "Cozy day at home" you might set Comfort high (e.g. 0.8), Thickness moderate-high (0.6), Fit looser (0.7), Airflow moderate (0.4), and vary others from context rather than all 0.5.
+
+Be consistent, numeric, and concise. 
+Output only the JSON, no explanation.`;
+
+      const userContent = useRouteFormulas
+        ? `Route context (time-weighted): temp ${agg.temp_avg.toFixed(1)}°C, wind ${agg.wind_avg.toFixed(1)} m/s, humidity ${agg.humidity_avg.toFixed(0)}%, outdoor fraction ${(agg.outdoor_fraction * 100).toFixed(0)}%, outdoor exposure ${(agg.outdoor_seconds / 3600).toFixed(1)} h.\n\nUser description: ${text}`
+        : text;
+
+      const payload = {
+        model: "gpt-4o",
+        response_format: { type: "json_object" },
+        messages: [
+          { role: "system", content: systemPrompt },
+          { role: "user", content: userContent }
+        ]
+      };
+
+      const res = await fetch("https://api.openai.com/v1/chat/completions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${key}`
+        },
+        body: JSON.stringify(payload)
+      });
+
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        console.error("OpenAI error", err);
+        alert("Failed to analyze text.");
+        return null;
+      }
+      const data = await res.json();
+      const content = data.choices?.[0]?.message?.content;
+      if (!content) return null;
+      let parsed;
+      try {
+        parsed = JSON.parse(content);
+      } catch (e) {
+        console.error("Failed to parse JSON content", content);
+        alert("Analysis returned unexpected format.");
+        return null;
+      }
+
+      if (useRouteFormulas && agg) {
+        const norms = {
+          activity_norm: parsed.activity_norm,
+          formality_norm: parsed.formality_norm,
+          aesthetic_norm: parsed.aesthetic_norm,
+          comfort_pref_norm: parsed.comfort_pref_norm,
+          containment_norm: parsed.containment_norm,
+          demand_norm: parsed.demand_norm,
+          stability_norm: parsed.stability_norm
+        };
+        const eight = computeSpecMetricsFromEnv(agg, norms);
+        lastMetricBreakdown = {
+          fromRoute: true,
+          env: eight.breakdown.env,
+          norms: eight.breakdown.norms,
+          formulaBased: {
+            Fit: eight.breakdown.Fit,
+            Mesh: eight.breakdown.Mesh,
+            Thickness: eight.breakdown.Thickness,
+            Airflow: eight.breakdown.Airflow,
+            Support: eight.breakdown.Support,
+            Comfort: eight.breakdown.Comfort,
+            DressLength: eight.breakdown.DressLength,
+            DressSize: eight.breakdown.DressSize
+          }
+        };
+        return {
+          Fit: eight.Fit,
+          Mesh: eight.Mesh,
+          Thickness: eight.Thickness,
+          Airflow: eight.Airflow,
+          Support: eight.Support,
+          Comfort: eight.Comfort,
+          DressLength: eight.DressLength,
+          DressSize: eight.DressSize
+        };
+      }
+      lastMetricBreakdown = { fromRoute: false, allFromLLM: true };
+      return parsed;
+    }
+
+    metricsForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const text = (nlInput.value || "").trim();
+      if (!text) return;
+      const planBtn = document.getElementById("plan-btn");
+      const planStatus = document.getElementById("plan-status");
+      planBtn.disabled = true;
+      planStatus.textContent = "";
+      try {
+        const key = await ensureApiKey();
+        if (!key || key === "PASTE_YOUR_OPENAI_API_KEY_HERE") {
+          alert("Add your API key: copy api-key.example.json to api-key.json and add your OpenAI key.");
+          return;
+        }
+        planStatus.textContent = "Extracting route from your description…";
+        const extracted = await extractLocationsFromText(text, key);
+        updateStep1Annotated(text, extracted ? extracted.highlights : null);
+        if (extracted && extracted.start && extracted.destinations && extracted.destinations.length > 0) {
+          populateWaypointInputs(extracted.start, extracted.destinations);
+          const destNames = extracted.destinations.map((d) => (typeof d === "object" && d && d.name != null) ? d.name : String(d));
+          const routeOk = await runRouteFromWaypoints(extracted.start, destNames, extracted.transit_mode, planStatus);
+          if (routeOk) mergeExtractionIntoRouteSegments(extracted);
+          if (routeOk) updateStep2Timeline();
+          if (!routeOk) planStatus.textContent = "Route failed; computing metrics from text only.";
+        } else {
+          if (planStatus) planStatus.textContent = "No multi-stop route found; computing metrics from text only.";
+          updateStep2FromRoute();
+          updateStep2SegmentTable();
+        }
+        planStatus.textContent = (planStatus.textContent || "") + " Computing metrics…";
+        const result = await analyzeTextToMetrics(text);
+        if (result) {
+          setMetricsDisplay(result);
+          lastMetrics = result;
+          updateCalculationProcessDisplay();
+          if (ws && ws.readyState === WebSocket.OPEN) {
+            ws.send(JSON.stringify({ type: "metrics", ...result }));
+          }
+          planStatus.textContent = "";
+        } else {
+          planStatus.textContent = "Metrics computation failed.";
+        }
+      } catch (err) {
+        console.error(err);
+        planStatus.textContent = "Error: " + (err.message || "unknown");
+      } finally {
+        planBtn.disabled = false;
+      }
+    });
+
+    if (sendGhBtn) {
+      sendGhBtn.addEventListener("click", () => {
+        if (!lastMetrics) return;
+        if (ws && ws.readyState === WebSocket.OPEN) {
+          ws.send(JSON.stringify({ type: "metrics", ...lastMetrics }));
+        } else {
+          alert("Not connected to Grasshopper. Start the WebSocket server (node server.js) and connect GH to ws://127.0.0.1:9000");
+        }
+      });
+    }
+
+    // ——— Scene
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0xffffff);
+
+    function getVisualSize() {
+      if (visualPanel) {
+        const w = visualPanel.clientWidth || window.innerWidth;
+        const h = visualPanel.clientHeight || window.innerHeight;
+        return { width: w, height: h };
+      }
+      return { width: window.innerWidth, height: window.innerHeight };
+    }
+
+    const size = getVisualSize();
+    const camera = new THREE.PerspectiveCamera(60, size.width / size.height, 0.01, 1000);
+    camera.position.set(2, 1.5, 2);
+
+    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(size.width, size.height);
+
+    const composer = new EffectComposer(renderer);
+    composer.addPass(new RenderPass(scene, camera));
+    composer.addPass(new ShaderPass(InvertShader));
+    const bloomPass = new UnrealBloomPass(
+      new THREE.Vector2(window.innerWidth, window.innerHeight),
+      0.28,
+      0.3,
+      0.55
+    );
+    composer.addPass(bloomPass);
+    composer.addPass(new ShaderPass(InvertShader));
+
+    const controls = new OrbitControls(camera, canvas);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+
+    const lineGroup = new THREE.Group();
+    // Rhino/GH: front often faces "down" in their space. Rotate so front faces the camera (applies to every model).
+    lineGroup.rotation.x = -Math.PI / 2;
+    scene.add(lineGroup);
+
+    let fabricateStartTime = null;
+    const fabricateDuration = 22.5;
+    let growthProgress = 1;
+
+    function onResize() {
+      const s = getVisualSize();
+      camera.aspect = s.width / s.height;
+      camera.updateProjectionMatrix();
+      renderer.setSize(s.width, s.height);
+      composer.setSize(s.width, s.height);
+      composer.setPixelRatio(renderer.getPixelRatio());
+      updateSimDebug();
+    }
+    window.addEventListener("resize", onResize);
+
+    function updateSimDebug() {
+      const el = document.getElementById("sim-debug");
+      if (!el) return;
+      const w = canvas.width || canvas.clientWidth || 0;
+      const h = canvas.height || canvas.clientHeight || 0;
+      const n = lineGroup ? lineGroup.children.length : 0;
+      el.textContent = `Canvas: ${w}×${h} | Contours: ${n}`;
+    }
+
+    function addLineFromFloats(floats) {
+      const pointCount = floats.length / 3;
+      const points = [];
+      for (let i = 0; i < pointCount; i++) {
+        points.push(new THREE.Vector3(
+          floats[i * 3],
+          floats[i * 3 + 1],
+          floats[i * 3 + 2]
+        ));
+      }
+      const curve = new THREE.CatmullRomCurve3(points, false);
+      const curvePoints = Math.max(pointCount * 6, 64);
+      const sampled = curve.getPoints(curvePoints);
+      const smoothFloats = new Float32Array(sampled.length * 3);
+      let xMin = Infinity, xMax = -Infinity, yMin = Infinity, yMax = -Infinity, zMin = Infinity, zMax = -Infinity;
+      for (let i = 0; i < sampled.length; i++) {
+        const p = sampled[i];
+        smoothFloats[i * 3] = p.x;
+        smoothFloats[i * 3 + 1] = p.y;
+        smoothFloats[i * 3 + 2] = p.z;
+        if (p.x < xMin) xMin = p.x; if (p.x > xMax) xMax = p.x;
+        if (p.y < yMin) yMin = p.y; if (p.y > yMax) yMax = p.y;
+        if (p.z < zMin) zMin = p.z; if (p.z > zMax) zMax = p.z;
+      }
+      const extent = Math.max(xMax - xMin, yMax - yMin, zMax - zMin, 0.001);
+      const geometry = new THREE.BufferGeometry().setFromPoints(sampled);
+      const material = new THREE.LineBasicMaterial({
+        color: 0x000000,
+        linewidth: 1.5
+      });
+      const line = new THREE.Line(geometry, material);
+      line.userData.restPositions = smoothFloats;
+      line.userData.zMin = zMin;
+      line.userData.zMax = zMax;
+      line.userData.extent = extent;
+      lineGroup.add(line);
+      return line;
+    }
+
+    // Motion: flowy drift + hem flutter + per-strand freq, tension weight, ripple
+    const motion = {
+      buoyantAmp: 0.04,
+      flutterAmp: 0.035,
+      hemPower: 0.55,
+      strandFreqOffset: 0.012,
+      rippleAmp: 0.0036,
+      rippleWaves: 2.5,
+      rippleFreq: 0.35,
+      knitElasticity: 0.012,
+      knitElasticityLag: 0.08,
+      knitElasticityPower: 2
+    };
+    const TAU = Math.PI * 2;
+    function flow(t, f1, f2, phase) {
+      const a = 0.65 * Math.sin(TAU * f1 * t + phase);
+      const b = 0.35 * Math.sin(TAU * f2 * t + phase * 1.7);
+      return a + b;
+    }
+    function drift(t, f1, f2, f3, phase) {
+      const a = 0.5 * Math.sin(TAU * f1 * t + phase);
+      const b = 0.3 * Math.sin(TAU * f2 * t + phase * 2.1);
+      const c = 0.2 * Math.sin(TAU * f3 * t + phase * 0.7);
+      return a + b + c;
+    }
+
+    function updateMotion(time) {
+      const t = time * 0.001;
+      for (let i = 0; i < lineGroup.children.length; i++) {
+        const line = lineGroup.children[i];
+        const rest = line.userData.restPositions;
+        if (!rest) continue;
+        const posAttr = line.geometry.attributes.position;
+        if (!posAttr) continue;
+        const pos = posAttr.array;
+        const useZ = line.userData.zMin !== undefined;
+        const hemMin = useZ ? line.userData.zMin : line.userData.yMin;
+        const hemMax = useZ ? line.userData.zMax : line.userData.yMax;
+        const hemRange = (hemMax - hemMin) || 1;
+        const scale = line.userData.extent || 1;
+        const hemIdx = useZ ? 2 : 1;
+        const ptCount = rest.length / 3;
+        const sInv = ptCount > 1 ? 1 / (ptCount - 1) : 1;
+
+        const bA = motion.buoyantAmp * scale;
+        const fA = motion.flutterAmp * scale;
+        const bf1 = 0.18 + i * motion.strandFreqOffset;
+        const bf2 = 0.31 + i * (motion.strandFreqOffset * 1.5);
+        const ff1 = 0.42 + i * motion.strandFreqOffset * 0.8;
+        const ff2 = 0.59 + i * motion.strandFreqOffset * 1.2;
+        const bx = bA * drift(t, 0.17, 0.29, 0.41, i * 0.5);
+        const by = bA * drift(t, 0.23, 0.37, 0.53, i * 0.5 + 2.1);
+        const bz = bA * drift(t, 0.13, 0.31, 0.47, i * 0.5 + 4.3);
+
+        let sumX = 0, sumZ = 0;
+        for (let j = 0; j < rest.length; j += 3) {
+          sumX += rest[j];
+          sumZ += rest[j + 2];
+        }
+        const centerX = sumX / ptCount;
+        const centerZ = sumZ / ptCount;
+
+        const rawElongation = Math.max(-1, Math.min(1, by / (bA || 1)));
+        let smoothed = line.userData.smoothedElongation;
+        if (smoothed === undefined) smoothed = 0;
+        smoothed = smoothed * (1 - motion.knitElasticityLag) + rawElongation * motion.knitElasticityLag;
+        line.userData.smoothedElongation = smoothed;
+        const curved = Math.sign(smoothed) * Math.pow(Math.min(1, Math.abs(smoothed)), motion.knitElasticityPower);
+        const baseKnit = motion.knitElasticity * curved;
+
+        for (let j = 0; j < rest.length; j += 3) {
+          const vi = j / 3;
+          const s = vi * sInv;
+          const tensionWeight = 0.8 + 0.2 * Math.sin(s * Math.PI);
+          const h = rest[j + hemIdx];
+          const hemT = (h - hemMin) / hemRange;
+          const hemFactor = Math.pow(1 - hemT, motion.hemPower);
+          const knitStrength = 0.6 + 0.4 * hemFactor;
+          const elasticityFactor = 1 - baseKnit * knitStrength;
+
+          const fx = tensionWeight * hemFactor * fA * flow(t, ff1, ff2, 0);
+          const fy = tensionWeight * hemFactor * fA * flow(t, ff1, ff2, 0.7);
+          const fz = tensionWeight * hemFactor * fA * flow(t, ff1, ff2, 1.5);
+
+          const ripplePhase = TAU * (s * motion.rippleWaves - t * motion.rippleFreq);
+          const rA = motion.rippleAmp * scale;
+          const rx = rA * Math.sin(ripplePhase);
+          const rz = rA * Math.sin(ripplePhase + 1.3);
+
+          pos[j]     = rest[j]     + bx + fx + rx;
+          pos[j + 1] = rest[j + 1] + by + fy;
+          pos[j + 2] = rest[j + 2] + bz + fz + rz;
+
+          const offX = pos[j] - centerX;
+          const offZ = pos[j + 2] - centerZ;
+          pos[j]     = centerX + offX * elasticityFactor;
+          pos[j + 2] = centerZ + offZ * elasticityFactor;
+        }
+        if (growthProgress < 1) {
+          const growthIndex = Math.min(ptCount - 1, Math.floor(growthProgress * ptCount));
+          const gx = pos[growthIndex * 3];
+          const gy = pos[growthIndex * 3 + 1];
+          const gz = pos[growthIndex * 3 + 2];
+          for (let vi = growthIndex + 1; vi < ptCount; vi++) {
+            pos[vi * 3]     = gx;
+            pos[vi * 3 + 1] = gy;
+            pos[vi * 3 + 2] = gz;
+          }
+        }
+        posAttr.needsUpdate = true;
+      }
+    }
+
+    function centerCameraOnLines() {
+      const box = new THREE.Box3().setFromObject(lineGroup);
+      const center = box.getCenter(new THREE.Vector3());
+      const size = box.getSize(new THREE.Vector3());
+      const maxDim = Math.max(size.x, size.y, size.z, 0.001);
+      controls.target.copy(center);
+      const dist = Math.max(maxDim * 1.8, 2);
+      camera.position.set(center.x + dist * 0.7, center.y + dist * 0.5, center.z + dist * 0.7);
+      // Set near/far so the full scene is in view (no clipping)
+      camera.near = Math.max(0.001, dist * 0.01);
+      camera.far = dist * 10;
+      camera.updateProjectionMatrix();
+    }
+
+    const rotateSpeed = 0.175;
+    let lastTime = performance.now() / 1000;
+    document.getElementById("fabricate-btn").addEventListener("click", () => {
+      fabricateStartTime = performance.now() / 1000;
+    });
+    function animate() {
+      requestAnimationFrame(animate);
+      const now = performance.now() / 1000;
+      const dt = now - lastTime;
+      lastTime = now;
+      if (fabricateStartTime !== null) {
+        growthProgress = Math.min(1, (now - fabricateStartTime) / fabricateDuration);
+        if (growthProgress >= 1) fabricateStartTime = null;
+      } else {
+        growthProgress = 1;
+      }
+      lineGroup.rotation.z -= rotateSpeed * dt;
+      updateMotion(performance.now());
+      controls.update();
+      composer.render(dt);
+    }
+    animate();
+
+    // ——— WebSocket
+    let ws;
+
+    function connect() {
+      ws = new WebSocket(WS_URL);
+      ws.binaryType = "arraybuffer";
+
+      ws.onopen = () => {
+        statusEl.setAttribute("aria-label", "Connected");
+        statusEl.className = "connected";
+      };
+
+      ws.onclose = () => {
+        statusEl.setAttribute("aria-label", "Disconnected");
+        statusEl.className = "disconnected";
+        setTimeout(connect, 2000);
+      };
+
+      ws.onerror = () => {};
+
+      ws.onmessage = async (event) => {
+        let floats;
+        if (typeof event.data === "string") {
+          try {
+            const parsed = JSON.parse(event.data);
+            if (parsed && parsed.type === "metrics") return;
+            let arr = null;
+            if (Array.isArray(parsed.points)) arr = parsed.points;
+            else if (Array.isArray(parsed)) arr = parsed;
+            if (!arr || arr.length === 0) return;
+            const flat = [];
+            for (let i = 0; i < arr.length; i++) {
+            const pt = arr[i];
+            if (Array.isArray(pt)) {
+              flat.push(Number(pt[0]), Number(pt[1]), Number(pt[2]));
+            } else if (pt != null && typeof pt === "object") {
+              const x = pt.x ?? pt.X ?? 0;
+              const y = pt.y ?? pt.Y ?? 0;
+              const z = pt.z ?? pt.Z ?? 0;
+              flat.push(Number(x), Number(y), Number(z));
+            }
+            }
+            if (flat.length % 3 !== 0) return;
+            floats = new Float32Array(flat);
+            console.log("Contour from JSON, points:", floats.length / 3);
+          } catch (_) {
+            return;
+          }
+        } else {
+          let buffer;
+          if (event.data instanceof ArrayBuffer) {
+            buffer = event.data;
+          } else if (event.data instanceof Blob) {
+            buffer = await event.data.arrayBuffer();
+          } else {
+            console.log("Unexpected message type:", typeof event.data, event.data);
+            return;
+          }
+
+          floats = new Float32Array(buffer);
+        }
+
+        if (floats.length % 3 !== 0) {
+          console.warn("Float count is not multiple of 3. Packing mismatch.");
+          return;
+        }
+
+        const pointCount = floats.length / 3;
+        if (typeof event.data !== "string") {
+          console.log("Binary message, byteLength:", event.data.byteLength || event.data.size, "points:", pointCount);
+          console.log("First point:", floats[0], floats[1], floats[2]);
+        }
+
+        while (lineGroup.children.length) {
+          const line = lineGroup.children[0];
+          lineGroup.remove(line);
+          line.geometry.dispose();
+          line.material.dispose();
+        }
+        addLineFromFloats(floats);
+        centerCameraOnLines();
+
+        const totalLines = lineGroup.children.length;
+        document.getElementById("received").textContent =
+          `${pointCount} points (this contour) · ${totalLines} contour(s) total`;
+        updateSimDebug();
+      };
+    }
+
+    if (WS_ENABLED) connect();
+    setTimeout(updateSimDebug, 200);
+  </script>
+</body>
+</html>
