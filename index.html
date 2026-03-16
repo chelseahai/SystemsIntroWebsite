@@ -11,402 +11,272 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Navigation -->
+  <!-- Minimal Nav -->
   <header class="site-header">
-    <div class="container header-inner">
-      <div class="logo">
-        <span class="logo-mark">HAI</span>
-        <span class="logo-text">HAI Systems</span>
-      </div>
+    <div class="nav-inner">
+      <a href="#" class="logo-link">HAI Systems</a>
       <nav class="nav">
-        <a href="#problem">Why</a>
-        <a href="#solution">System</a>
-        <a href="#impact">Impact</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#team">Team</a>
+        <a href="#position">Position</a>
+        <a href="#platform">Platform</a>
+        <a href="#product">Product</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <a href="#contact" class="nav-cta">Book a Demo</a>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="top">
+  <!-- Hero: Full-viewport background + centered title -->
+  <section class="hero">
+    <img class="hero-bg-image" src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=1920&q=80" alt="" />
     <video class="hero-video" autoplay muted loop playsinline>
       <source src="https://cdn.coverr.co/videos/coverr-robotic-arm-in-motion-4172340/4172340-hd_1080.mp4" type="video/mp4" />
     </video>
-
     <div class="hero-overlay"></div>
-
-    <div class="container hero-content">
-      <div class="hero-copy">
-        <p class="eyebrow">Garment Intelligence Frameworks</p>
-        <h1>The Future of Garment Intelligence.</h1>
-        <p class="subheadline">
-          Automating the fashion lifecycle from design to manufacturing through
-          AI-powered computational frameworks.
-        </p>
-        <div class="hero-cta-row">
-          <a href="#contact" class="btn btn-primary">Book a Demo</a>
-          <a href="#solution" class="btn btn-ghost">View Our System</a>
-        </div>
-        <div class="hero-metadata">
-          <span class="mono-pill">Design-on-Demand</span>
-          <span class="mono-pill">Biometric Fit</span>
-          <span class="mono-pill">Zero Overproduction</span>
-        </div>
-      </div>
-
-      <div class="hero-3d">
-        <div class="hero-3d-frame">
-          <div class="hero-3d-label mono">LIVE SYSTEM VIEW</div>
-          <canvas id="hero-3d-canvas"></canvas>
-          <div class="hero-3d-meta mono">
-            <span>HAI_GARMENT_V03.gh</span>
-            <span>REAL-TIME GEOMETRY SOLVER</span>
-          </div>
-        </div>
-        <p class="hero-3d-caption">
-          Web-native 3D visualization of computational garments. Replace with Three.js or Spline embed.
-        </p>
-      </div>
+    <div class="hero-content">
+      <h1 class="hero-title">The Future of Garment Intelligence</h1>
+      <p class="hero-tagline">From design to manufacturing through AI-powered computational frameworks</p>
     </div>
   </section>
 
-  <!-- Problem / Why -->
-  <section class="section" id="problem">
-    <div class="container two-col">
-      <div>
-        <p class="eyebrow">The Problem</p>
-        <h2>Moving Beyond Inefficient Systems.</h2>
-        <p class="body-lg">
-          Fashion still runs on standardized sizing and repetitive sampling
-          cycles—systems designed for mass production, not human bodies or the
-          planet. This leads to wasted materials, unsold inventory, and a
-          disconnect between creative intent and technical execution.
-        </p>
-        <p>
-          HAI Systems replaces legacy processes with a computational pipeline
-          that starts with the individual and ends with precise, on-demand
-          fabrication.
-        </p>
-      </div>
-
-      <div class="infographic">
-        <div class="metric-card">
-          <span class="metric-value">70%</span>
-          <span class="metric-label">reduction in sampling waste</span>
-          <p class="metric-caption">
-            By simulating and validating garments in silico before a single
-            physical sample exists.
-          </p>
-        </div>
-        <div class="metric-card">
-          <span class="metric-value">0</span>
-          <span class="metric-label">unsold inventory</span>
-          <p class="metric-caption">
-            Design-on-Demand workflows produce only what is already spoken for.
-          </p>
-        </div>
-        <div class="metric-card">
-          <span class="metric-value">100%</span>
-          <span class="metric-label">personalized fit</span>
-          <p class="metric-caption">
-            Biometric and contextual data drive every pattern and structural
-            decision.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Solution / System -->
-  <section class="section tinted" id="solution">
-    <div class="container">
-      <p class="eyebrow">The System</p>
-      <h2>How HAI Systems Works.</h2>
-
-      <div class="steps-grid">
-        <div class="step-card">
-          <div class="step-index mono">01</div>
-          <h3>Data Integration</h3>
-          <p>
-            We ingest biometric scans, posture and movement profiles, personal
-            aesthetic preferences, and environmental context—temperature,
-            activity, geography—to construct a high-fidelity design brief
-            for each garment.
-          </p>
-          <div class="step-tag-row">
-            <span class="mono-pill">Biometrics</span>
-            <span class="mono-pill">Preference Graphs</span>
-            <span class="mono-pill">Context Models</span>
-          </div>
-        </div>
-
-        <div class="step-card">
-          <div class="step-index mono">02</div>
-          <h3>Technical Co-Design</h3>
-          <p>
-            Our proprietary framework translates these inputs into
-            manufacturable geometries. Pattern logic, structural behavior,
-            and material constraints are encoded while preserving each
-            brand's aesthetic DNA.
-          </p>
-          <div class="wireframe-visual">
-            <div class="wireframe-body">
-              <div class="wireframe-garment"></div>
-            </div>
-            <div class="wireframe-overlay mono">
-              GHOST WIREFRAME VIEW – PARAMETRIC SHELL
-            </div>
-          </div>
-        </div>
-
-        <div class="step-card">
-          <div class="step-index mono">03</div>
-          <h3>Automated Fabrication</h3>
-          <p>
-            Clean digital files flow directly into 3D printing, automated
-            knitting, or hybrid craft workflows. The result: precise,
-            repeatable garments with minimal waste and maximum creative
-            control.
-          </p>
-          <div class="step-tag-row">
-            <span class="mono-pill">3D Print</span>
-            <span class="mono-pill">Robotic Craft</span>
-            <span class="mono-pill">On-Demand</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Impact -->
-  <section class="section" id="impact">
-    <div class="container">
-      <p class="eyebrow">The Impact</p>
-      <h2>Engineering New Industry Pillars.</h2>
-
-      <div class="impact-tabs" data-active="designers">
-        <div class="impact-tab-list">
-          <button class="impact-tab active" data-tab="designers">
-            Designers
-          </button>
-          <button class="impact-tab" data-tab="brands">Brands</button>
-          <button class="impact-tab" data-tab="planet">Planet</button>
-        </div>
-
-        <div class="impact-panels">
-          <article
-            class="impact-panel active"
-            data-panel="designers"
-          >
-            <h3>For Designers</h3>
-            <p class="body-lg">
-              Stay in full creative authorship while the system handles
-              geometric and material complexity.
-            </p>
-            <ul>
-              <li>Iterate in parametric space without sacrificing intuition.</li>
-              <li>Preview physical behavior and drape before fabrication.</li>
-              <li>Archive design logic as reusable, brand-specific systems.</li>
-            </ul>
-          </article>
-
-          <article class="impact-panel" data-panel="brands">
-            <h3>For Brands</h3>
-            <p class="body-lg">
-              Transform operations into scalable bespoke production with
-              reliable, data-driven forecasting.
-            </p>
-            <ul>
-              <li>Shift from seasonal bulk orders to continuous demand flows.</li>
-              <li>Reduce inventory risk via Design-on-Demand pipelines.</li>
-              <li>Integrate with existing PLM/ERP infrastructure.</li>
-            </ul>
-          </article>
-
-          <article class="impact-panel" data-panel="planet">
-            <h3>For the Planet</h3>
-            <p class="body-lg">
-              A circular economy model built on precision, not excess.
-            </p>
-            <ul>
-              <li>Radically reduce material waste through digital validation.</li>
-              <li>Localize production to shorten supply chains.</li>
-              <li>Design garments for repair, reuse, and material recovery.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Portfolio / Case Studies -->
-  <section class="section tinted" id="portfolio">
-    <div class="container">
-      <p class="eyebrow">Portfolio</p>
-      <h2>From Code to Cloth.</h2>
-      <p class="body-lg">
-        Editorial-level garments generated, validated, and fabricated through
-        the HAI Systems pipeline.
+  <!-- Intro block -->
+  <section class="block block-intro">
+    <div class="block-content narrow">
+      <p class="lead">
+        Automating the fashion lifecycle from design to manufacturing. HAI Systems replaces legacy processes such as standardized sizing and repetitive sampling cycles, with a computational pipeline that starts with the individual and ends with precise, on-demand fabrication.
       </p>
+    </div>
+  </section>
 
-      <div class="portfolio-grid">
-        <article class="portfolio-card">
-          <div class="portfolio-image">
-            <img src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&q=80" alt="3D generated high-fashion garment" />
-          </div>
-          <div class="portfolio-meta">
-            <div class="portfolio-code-view">
-              <div class="portfolio-code-header mono">
-                HAI_GOWN_ORBITAL.gh
-              </div>
-              <div class="portfolio-code-body mono">
-                <span>// mesh resolution: 0.8</span>
-                <span>// lattice: orbital_shell</span>
-                <span>// fit profile: biometric_set_014</span>
-              </div>
-            </div>
-            <div class="portfolio-caption">
-              <h3>Orbital Lattice Gown</h3>
-              <p>
-                Parametric shell geometry translated directly into a 3D-printed
-                textile system, tailored to biometric scan data.
-              </p>
-            </div>
-          </div>
-        </article>
-
-        <article class="portfolio-card">
-          <div class="portfolio-image">
-            <img src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&q=80" alt="Technical knitwear garment" />
-          </div>
-          <div class="portfolio-meta">
-            <div class="portfolio-code-view">
-              <div class="portfolio-code-header mono">
-                HAI_SECOND_SKIN.knit
-              </div>
-              <div class="portfolio-code-body mono">
-                <span>// gauge: fine</span>
-                <span>// pattern: dynamic_rib</span>
-                <span>// motion field: walk_cycle_03</span>
-              </div>
-            </div>
-            <div class="portfolio-caption">
-              <h3>Second Skin Knit System</h3>
-              <p>
-                Motion-aware knitwear generated from movement capture and
-                thermoregulation datasets.
-              </p>
-            </div>
-          </div>
-        </article>
-
-        <article class="portfolio-card">
-          <div class="portfolio-image">
-            <img src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&q=80" alt="Structured coat garment" />
-          </div>
-          <div class="portfolio-meta">
-            <div class="portfolio-code-view">
-              <div class="portfolio-code-header mono">
-                HAI_COAT_STRUCT.v2
-              </div>
-              <div class="portfolio-code-body mono">
-                <span>// skeleton: exo_frame</span>
-                <span>// material: hybrid_composite</span>
-                <span>// environment: nyc_winter</span>
-              </div>
-            </div>
-            <div class="portfolio-caption">
-              <h3>Exo-Frame Coat</h3>
-              <p>
-                Structural outerwear tuned to climatic and urban-use profiles,
-                balancing insulation and mobility.
-              </p>
-            </div>
-          </div>
-        </article>
+  <!-- Position -->
+  <section class="block block-intro" id="position">
+    <h2 class="section-head">Position</h2>
+    <div class="block-content narrow">
+      <p class="lead">
+        Fashion still runs on systems designed for mass production, not human bodies or the planet. This leads to wasted materials, unsold inventory, and a disconnect between creative intent, technical execution, and personal preference.
+      </p>
+      <p class="lead">
+        In place of assembling independently produced parts, we harvest biometric, aesthetic, contextual data to create gradients of functionality. Upon their union, design and fabrication undergo a single computational pass, leaving behind no trace of overproduction.
+      </p>
+    </div>
+    <div class="block-content block-position-stats">
+      <div class="col-stats">
+        <div class="stat-callout">
+          <span class="stat-value">70%</span>
+          <span class="stat-label">reduction in sampling waste</span>
+        </div>
+        <div class="stat-callout">
+          <span class="stat-value">0</span>
+          <span class="stat-label">unsold inventory</span>
+        </div>
+        <div class="stat-callout">
+          <span class="stat-value">100%</span>
+          <span class="stat-label">personalized fit</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Team & Philosophy -->
-  <section class="section" id="team">
-    <div class="container two-col">
-      <div>
-        <p class="eyebrow">Team & Philosophy</p>
-        <h2>Engineering the Next Chapter of Fashion.</h2>
-        <p class="body-lg">
-          HAI Systems is led by Chelsea Hai, a computational designer
-          working at the intersection of fashion, architecture, and
-          advanced manufacturing.
-        </p>
-        <p>
-          With a background in Rhino, Grasshopper, and algorithmic design,
-          Chelsea builds systems that treat garments as dynamic, data-rich
-          infrastructures rather than static products.
-        </p>
+  <!-- Platform -->
+  <section class="block" id="platform">
+    <h2 class="section-head">Platform</h2>
+    <div class="block-content narrow">
+      <p class="lead">
+        The HAI Systems platform is composed of tools, techniques, and technologies in the areas of biometric integration, computational design, and automated fabrication. An end-to-end digital pipeline for lifecycle design of bespoke, on-demand garments.
+      </p>
+    </div>
+
+    <!-- Platform Details -->
+    <div class="platform-details">
+      <article class="platform-item">
+        <h3 class="section-head">Technical Co-Design</h3>
+        <div class="block-image full-bleed">
+          <div class="wireframe-placeholder">
+            <canvas id="hero-3d-canvas"></canvas>
+            <span class="image-caption mono">GHOST WIREFRAME VIEW — PARAMETRIC SHELL</span>
+          </div>
+        </div>
+        <div class="block-content narrow">
+          <p class="lead">
+            Our proprietary framework encodes pattern logic, structural behavior, and material constraints. Clean digital files flow directly into 3D printing, automated knitting, or hybrid craft workflows.
+          </p>
+        </div>
+      </article>
+
+      <article class="platform-item">
+        <h3 class="section-head">Automated Fabrication</h3>
+        <div class="block-content narrow">
+          <p class="lead">
+            The result: precise, repeatable garments with minimal waste and maximum creative control. One pipeline, one material class, one system—from digital geometry to physical product. We transform parametric designs into textile products using CNC knitting, 3D printing, and robotic fabrication. The same machines that exist on the factory floor, driven by computational design.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Pipeline & Input -->
+  <section class="block" id="pipeline">
+    <div class="input-module integration-module">
+      <h3 class="input-module-title">Integration</h3>
+      <p class="input-module-text">
+        This multi-dimensional data set forms a rigorous design brief where every pattern and structural intersection is driven by the wearer's specific context. Our proprietary framework translates these complex inputs into precise, manufacturable specifications while strictly preserving the brand's original design DNA. By integrating individual data directly into the technical backend, we transform static ready-to-wear collections into adaptive, couture-level garments engineered for the individual.
+      </p>
+    </div>
+    <div class="block-image full-bleed pipeline-container">
+      <img src="assets/PipelineMap.jpg" alt="Pipeline: Data to Fabrication" class="pipeline-diagram-img" />
+      <span class="image-caption mono pipeline-caption">PIPELINE : DATA TO FABRICATION</span>
+    </div>
+
+    <!-- The Body Input (from review_proposal) -->
+    <div class="input-module body-input-module">
+      <h3 class="input-module-title">THE BODY INPUT</h3>
+      <p class="input-module-text">The system offers two solutions, 3D scanning the body or simply put in your measurements.</p>
+      <div class="body-visual-row">
+        <div class="body-visual-placeholder">
+          <img src="assets/measureurself.gif" alt="Body Measurement" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <span class="media-placeholder" style="display:none;">Body measurement GIF</span>
+        </div>
+        <div class="body-visual-placeholder">
+          <img src="assets/8measurements.gif" alt="Body Measurements" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <span class="media-placeholder" style="display:none;">8 measurements GIF</span>
+        </div>
       </div>
-      <div class="mission">
-        <h3>Mission</h3>
-        <p>
-          We believe the next era of fashion will not be defined by faster
-          consumption, but by better systems—systems that encode
-          responsibility, intelligence, and beauty into every step of the
-          lifecycle.
-        </p>
-        <p>
-          HAI Systems exists to prototype those infrastructures: tools and
-          processes that make it possible to design fewer, better garments
-          with precision, care, and planetary limits in mind.
-        </p>
+      <div class="measurements-section">
+        <h4 class="measurements-title">Measure Yourself For</h4>
+        <div class="measurements-text">
+          <p>Upper Bust <strong>78</strong></p>
+          <p>Bust <strong>80</strong></p>
+          <p>Under Bust <strong>74</strong></p>
+          <p>Waist <strong>60</strong></p>
+          <p>Upper Hip <strong>78</strong></p>
+          <p>Hip <strong>90</strong></p>
+          <p>B to W <strong>13</strong></p>
+          <p>W to H <strong>20</strong></p>
+        </div>
+        <p class="text-line">The data forms a live parametric model that updates in real time.</p>
+        <div class="body-visual-placeholder body-geometry">
+          <img src="assets/bodygeometry.gif" alt="Body Geometry" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <span class="media-placeholder" style="display:none;">Body geometry GIF</span>
+        </div>
+        <p class="text-line">This step establishes the baseline geometry for garment generation.</p>
       </div>
+    </div>
+
+    <!-- The Context Input (from review_proposal) -->
+    <div class="input-module context-input-module">
+      <h3 class="input-module-title">THE CONTEXT INPUT</h3>
+      <p class="context-intro">Simply answer the question</p>
+      <p class="context-question">"What are you doing for today?"</p>
+      <p class="context-description">The system reads your context, processes it, pulls the relevant data, and calculates what you need to wear for that day.</p>
+      <div class="context-video-placeholder">
+        <video autoplay loop muted playsinline preload="auto">
+          <source src="assets/Videos/Talking01_04.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="text-analysis-placeholder">
+        <img src="assets/TextAnalysis.jpg" alt="Text Analysis" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <span class="media-placeholder" style="display:none;">Text analysis image</span>
+      </div>
+      <div class="equations-container">
+        <div class="equation-item">
+          <p class="equation-label">Fit</p>
+          <p class="equation-formula mono">Fit = 1 - [0.30 × temp_norm - 0.25 × activity_norm + 0.15 × (1 - comfort_pref_norm) + 0.20 × containment_norm + 0.10 × spatial_norm]</p>
+        </div>
+        <div class="equation-item">
+          <p class="equation-label">Mesh</p>
+          <p class="equation-formula mono">Mesh = 0.35 × temp_norm + 0.25 × (1 - activity_norm) + 0.20 × formality_norm + 0.20 × aesthetic_norm</p>
+        </div>
+        <div class="equation-item">
+          <p class="equation-label">Thickness</p>
+          <p class="equation-formula mono">Thickness = 0.50 × temp_norm + 0.25 × wind_norm + 0.25 × exposure_norm</p>
+        </div>
+        <div class="equation-item">
+          <p class="equation-label">Airflow</p>
+          <p class="equation-formula mono">Airflow = 1 - [0.35 × temp_norm + 0.25 × humidity_norm + 0.25 × activity_norm - 0.15 × outdoor_norm]</p>
+        </div>
+        <div class="equation-item">
+          <p class="equation-label">Support</p>
+          <p class="equation-formula mono">Support = 0.35 × demand_norm + 0.25 × stability_norm + 0.25 × formality_norm + 0.15 × wind_norm</p>
+        </div>
+      </div>
+      <div class="context-sliders-row">
+        <div class="slider-item"><label>Fit</label><span class="slider-value">0.73</span></div>
+        <div class="slider-item"><label>Mesh</label><span class="slider-value">0.42</span></div>
+        <div class="slider-item"><label>Thickness</label><span class="slider-value">0.89</span></div>
+        <div class="slider-item"><label>Airflow</label><span class="slider-value">0.15</span></div>
+        <div class="slider-item"><label>Support</label><span class="slider-value">0.67</span></div>
+      </div>
+
+      <!-- Text to Fabric (from Showcase1.0) -->
+      <div class="input-module showcase-module">
+        <h3 class="input-module-title">TEXT TO FABRIC</h3>
+        <p class="input-module-text">Describe your day in text and get garment parameters with an interactive 3D fabric visualization.</p>
+        <div class="showcase-embed">
+          <iframe src="showcase/index.html" title="Text to Fabric" class="showcase-iframe"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product / Portfolio -->
+  <section class="block" id="product">
+    <h2 class="section-head">Product</h2>
+    <div class="block-content narrow">
+      <p class="lead">
+        Editorial-level garments generated, validated, and fabricated through the HAI Systems pipeline. From code to cloth.
+      </p>
+    </div>
+  </section>
+
+  <!-- Impact / Praxis -->
+  <section class="block block-tinted" id="impact">
+    <h2 class="section-head">Impact</h2>
+    <div class="block-content narrow">
+      <p class="lead">
+        For Designers: Stay in full creative authorship while the system handles geometric and material complexity. Iterate in parametric space, preview physical behavior before fabrication, archive design logic as reusable systems.
+      </p>
+      <p class="lead">
+        For Brands: Scalable bespoke production with data-driven forecasting. Shift from seasonal bulk orders to continuous demand flows. Reduce inventory risk via Design-on-Demand pipelines.
+      </p>
+      <p class="lead">
+        For the Planet: A circular economy model built on precision, not excess. Radically reduce material waste through digital validation. Localize production. Design garments for repair, reuse, and material recovery.
+      </p>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="block">
+    <h2 class="section-head">Team</h2>
+    <div class="block-content narrow">
+      <p class="lead">
+        HAI Systems is led by Chelsea Hai, a computational designer working at the intersection of fashion, architecture, and advanced manufacturing. With a background in Rhino, Grasshopper, and algorithmic design, Chelsea builds systems that treat garments as dynamic, data-rich infrastructures rather than static products.
+      </p>
+      <p class="lead">
+        We believe the next era of fashion will not be defined by faster consumption, but by better systems—systems that encode responsibility, intelligence, and beauty into every step of the lifecycle. HAI Systems exists to prototype those infrastructures.
+      </p>
     </div>
   </section>
 
   <!-- Footer / Contact -->
   <footer class="site-footer" id="contact">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <h2>Interested in a pilot collaboration?</h2>
-        <p class="body-lg">
-          Share a collection, a technical challenge, or a research brief—and
-          we'll show you how HAI Systems can become part of your pipeline.
-        </p>
-        <a href="mailto:hello@haisystems.studio" class="btn btn-primary">
-          Inquire Here
-        </a>
+    <div class="footer-inner">
+      <h2 class="section-head">Interested in a pilot collaboration?</h2>
+      <p class="lead">
+        Share a collection, a technical challenge, or a research brief, and we'll show you how HAI Systems can become part of your workflow.
+      </p>
+      <a href="mailto:chelseahai@haisystems.net" class="btn btn-primary">Inquire Here</a>
+      <div class="footer-meta">
+        <span>New York</span>
+        <span>·</span>
+        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        <span>·</span>
+        <a href="https://www.instagram.com/chelseahai_/" target="_blank" rel="noreferrer">Instagram</a>
       </div>
-
-      <div class="footer-right">
-        <div class="footer-meta">
-          <div>
-            <span class="footer-label">Location</span>
-            <p>Headquartered in New York.</p>
-          </div>
-          <div>
-            <span class="footer-label">Connect</span>
-            <p>
-              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
-                LinkedIn
-              </a>
-              &nbsp;·&nbsp;
-              <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
-                Instagram
-              </a>
-            </p>
-          </div>
-        </div>
-        <p class="footer-fine mono">
-          © <span id="year"></span> HAI Systems. All rights reserved.
-        </p>
-      </div>
+      <p class="footer-fine mono">© <span id="year"></span> HAI Systems</p>
     </div>
   </footer>
 

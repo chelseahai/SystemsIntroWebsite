@@ -4,28 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     yearSpan.textContent = new Date().getFullYear();
   }
 
-  const tabContainer = document.querySelector(".impact-tabs");
-  if (tabContainer) {
-    const tabs = tabContainer.querySelectorAll(".impact-tab");
-    const panels = tabContainer.querySelectorAll(".impact-panel");
-
-    tabs.forEach((tab) => {
-      tab.addEventListener("click", () => {
-        const target = tab.getAttribute("data-tab");
-        if (!target) return;
-
-        tabs.forEach((t) => t.classList.remove("active"));
-        panels.forEach((p) => p.classList.remove("active"));
-
-        tab.classList.add("active");
-        const panel = tabContainer.querySelector(
-          `.impact-panel[data-panel="${target}"]`
-        );
-        if (panel) panel.classList.add("active");
-      });
-    });
-  }
-
   const canvas = document.getElementById("hero-3d-canvas");
   if (canvas && canvas.getContext) {
     const ctx = canvas.getContext("2d");
@@ -39,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       ctx.save();
       ctx.translate(width / 2, height / 2 + 10);
-      ctx.strokeStyle = "rgba(70, 227, 255, 0.9)";
+      ctx.strokeStyle = "rgba(223, 190, 250, 0.9)";
       ctx.lineWidth = 1.2;
       ctx.globalAlpha = 0.9;
 
@@ -75,7 +53,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function resizeCanvas() {
-      const rect = canvas.getBoundingClientRect();
+      const parent = canvas.parentElement;
+      if (!parent) return;
+      const rect = parent.getBoundingClientRect();
+      if (rect.width === 0 || rect.height === 0) return;
       const dpr = window.devicePixelRatio || 1;
       canvas.width = rect.width * dpr;
       canvas.height = rect.height * dpr;
